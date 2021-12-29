@@ -25,7 +25,7 @@
       animation: blinkingText 18s infinite;
     }
     @keyframes blinkingText{
-      0%		{ color: #005420;}
+      0%		{ color: #038535;}
       25%		{ color: #3079e8d6;}
       35%		{ color: #9b5bf4d6;}
       50%		{ color: hsl(319, 92%, 71%);}
