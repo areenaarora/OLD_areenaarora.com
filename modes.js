@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // if it's dark -> go light
             themeStylesheet.href = 'light-theme.css';
             themeToggle.innerText = 'Switch to dark mode';
-
         }
+        //save the preference to localStorage
+
+        localStorage.setItem('theme', 'dark-theme.css');
+
     })
 })
