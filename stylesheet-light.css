@@ -67,3 +67,8 @@ h4 {
 #link-ipt {
   color: rgb(38, 133, 12);
 }
+.box {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: black;
+}
