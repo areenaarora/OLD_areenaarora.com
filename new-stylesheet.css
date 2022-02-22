@@ -114,3 +114,24 @@ button {
   cursor: grab;
   font-family: "Space Mono", monospace;
 }
+
+.resume-p-font
+{
+  font-size: 18px; 
+  color: black;">
+}
+a:hover p {
+  color: rgb(10, 104, 34);
+}
+
+.resume-columns {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.resume-headers {
+  font-size: 30px;
+  text-align: left;
+  color: #02163ee9;
+}
