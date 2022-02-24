@@ -115,7 +115,7 @@ button {
   font-family: "Space Mono", monospace;
 }
 
-.resume-p-font
+.aboutme-p-font
 {
   font-size: 18px; 
   color: black;">
@@ -124,10 +124,9 @@ a:hover p {
   color: rgb(10, 104, 34);
 }
 
-.resume-columns {
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
+.aboutme-div {
+  padding:70px;
+  margin:0;
 }
 
 .resume-headers {
