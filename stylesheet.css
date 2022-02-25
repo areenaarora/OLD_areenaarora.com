@@ -101,8 +101,9 @@ a {
 a:hover h2 {
   color: rgb(10, 104, 34);
 }
+
 button {
-  background-color: #a0249a;
+  background-color: #080147;
   border: none;
   border-radius: 12px 12px 12px 12px;
   color: white;
