@@ -135,3 +135,11 @@ a:hover p {
   text-align: left;
   color: #02163ee9;
 }
+
+.p-playground {
+  font-size: 18px;
+  font-weigh:bold;
+  text-align: left;
+  color:black;
+  background-size: contain;
+}
