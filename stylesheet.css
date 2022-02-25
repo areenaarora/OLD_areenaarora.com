@@ -143,3 +143,18 @@ a:hover p {
   color:black;
   background-size: contain;
 }
+
+.aboutme-buttons{
+  background-color: #000000;
+  border: none;
+  border-radius: 12px 12px 12px 12px;
+  color: rgb(255, 255, 255);
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: grab;
+  font-family: "Space Mono", monospace;
+}
