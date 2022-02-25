@@ -1,237 +1,131 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <link rel="stylesheet" href="new-stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/efe58d4158.js" crossorigin="anonymous"></script>
-    <script document.getElementById("demo").innerHTML="modes.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="icon" href="icon.png">
-    <link rel="stylesheet" href="stylesheet.css">
-    <script defer data-domain="areenaarora.com" src="https://plausible.io/js/plausible.js"></script>
-    <!-- <link rel="stylesheet" href="stylesheet-dark.css"> -->
-    <title>Home</title>
 </head>
 
 <body>
-    <div style="width: 75%; margin: 0 auto;">
-        <nav class="breadcrumb is-right has-bullet-separator" aria-label="breadcrumbs">
-            <ul>
-                <li>
-                    <a href="https://areenaarora.com">
-                        <span class="icon is-small;">
-                            <i class="fas fa-home" aria-hidden="true"></i>
-                        </span>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://areenaarora.com/resume">
-                        <span class="icon is-small has-text-black">
-                            <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        <span style="color:black">Resume</span>
-                    </a>
-                </li>
-                <!-- <li>
-                    <a href="https://areenaarora.com/Curries">
-                        <span class="icon is-small has-text-danger">
-                        <i class="fas fa-pepper-hot" aria-hidden="true"></i>
-                        </span>
-                        <span style="color: red;">Curries</span>
-                    </a>
-                </li> -->
-            </ul>
-        </nav>
-        <h1 class=blink-text>
-            Hi! I'm Areena 👋🏼
-        </h1>
-        <br>
-        <h2 class='subtitle'>
-            I'm pursuing a master's degree in <strong class="highlight" id="course-data-journalism">Data
-                Journalism</strong> at <a href='https://journalism.columbia.edu/' target='_blank' class="highlight"
-                id="university">Columbia University</a>.
-            I've worked as a publisher for <a class="highlight" id="link-reuters">Reuters</a>'
-            wire service Eikon, as a senior-editor for
-            <a class="highlight" id="link-glance" href='https://glance.com/' target='_blank'>Glance</a>, and a local
-            reporter for <a class="highlight" id="link-ipt" href='https://www.idahopress.com/' target='_blank'>Idaho
-                Press</a>.
-            <br> <br>
-            <strong>I write a <a href="https://areena.substack.com" target="_blank"> weekly newsletter </a> on
-                learning
-                how to code, grad school, life in NYC and more!</strong>
-            <div style='display: flex; gap:15px; justify-content: center;'>
-                <iframe src="https://areena.substack.com/embed" width="470" height="170"
-                    style="border:0px solid #A569BD; background:#FBFCFC;" frameborder="0" scrolling="no"></iframe>
-            </div>
-            <br>
-        </h2>
-        <div style="display: flex; gap:15px; justify-content: center;">
-            <a href='mailto:areena.arora@columbia.edu?Subject=Hello!' target='blank'>
-                <i class="fas fa-envelope fa-2x"></i>
-            </a>
-            <a href='https://twitter.com/AreenaArora' target='blank'>
-                <i class="fab fa-twitter fa-2x"></i>
-            </a>
-            <a href='https://github.com/areenaarora' target='blank'>
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href='https://www.linkedin.com/in/areena-arora' target="blank">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href='https://www.instagram.com/feelin_gredient' target="blank">
-                <i class="fab fa-instagram-square fa-2x"></i>
-            </a>
-        </div>
-        <br>
-        <h3 class="title is-3 has-text-centered is-family-secondary">
-            <strong>Here's some of my work</strong>
-        </h3>
-        <h2><strong>Data visualization</strong></h2>
-        <div class="columns is-multiline">
-            <p>
-            <div class="column is-one-third">
-                <a href='https://areenaarora.com/new-york-state-spills' target="_blank">
-                    <strong>Hazardous spills in New York over the last five years </a></strong>
-                <br>
-                👩🏻‍💻: <span class="tag is-success">Python</span> <span class="tag is-success">Excel</span>
-                <a href='https://ggplot2.tidyverse.org/reference/' target='_blank'><span
-                        class="tag is-success">ggplot2</span></a>
-                <a href='https://pandas.pydata.org/' target='_blank'><span class="tag is-success">Pandas</span></a>
-                <br>
-                A data dive into hazardous material spill incidents in New York state in the last five
-                years.<br>February 2022
-            </div>
-            </p>
-            <p>
-            <div class="column is-one-third">
-                <a href='https://areenaarora.com/biryani-project' target="_blank">
-                    <strong> Where's India's best and cheapest Biryani?</a></strong>
-                <br>
-                👩🏻‍💻: <a href='https://pandas.pydata.org/' target='_blank'><span
-                        class="tag is-success">Pandas</span></a> <a
-                    href='https://www.crummy.com/software/BeautifulSoup/bs4/doc/' target='_blank'><span
-                        class="tag is-success">Beautiful Soup</span></a>
-                <a href='https://www.selenium.dev' target='_blank'> <span class="tag is-success">Selenium</span></a>
-                <br>
-                Built a database of restaurants that deliver Biryani in six Indian cities for a quick and fun
-                analysis.<br>February 2022
-            </div>
-            </p>
-            <p>
-            <div class="column is-one-third">
-                <a href='https://github.com/areenaarora/scraping-newsroom-style-guides' target="_blank">
-                    <strong>Comparing different newsrooms' style-guides </a></strong>
-                <br>
-                👩🏻‍💻: <span class="tag is-success">Python</span> <span class="tag is-success">Regex</span> <span
-                    class="tag is-success">PDF Miner</span>
-                <br>
-                Compared how different words are defined by different news organizations to get an insight into their
-                editorial decisions.<br>December 2021
-            </div>
-            </p>
-            <p>
-            <div class="column is-one-third">
-                <a href='https://github.com/areenaarora/areenaarora.com' target="_blank">
-                    <strong> This website!</a></strong>
-                <br>
-                👩🏻‍💻: <a href='https://bulma.io/' target='_blank'><span class="tag is-success">Bulma</span></a> <a
-                    href='https://fontawesome.com/' target='_blank'><span class="tag is-success">Font Awesome</span></a>
-                <a href='https://freeicons.io/ target=' _blank'> <span class="tag is-success">Free Icons</span></a>
-                <br>
-                Using this website as my design skills' playground.<br>December 2021
-            </div>
-            </p>
-        </div>
-        <br>
-        <h2> <strong>Reporting & Writing</strong></h2>
-        <br>
-        <h4 style='font-size: large; color: rgb(15, 0, 26);'><strong>Accountability, Investigative & Crime
-                reporting</strong></h3>
-            <br>
-            <p
-                style="color:rgb(0, 42, 0); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: medium;">
-
-            <div class="columns is-multiline">
-                <div class="column is-one-third">
-
-                    <a href='https://www.idahopress.com/news/local/2cscoop/indian-creek-plaza-over-budget-and-behind-original-construction-schedule/article_729c087a-780c-5202-bacf-34255edb016d.html'
-                        target="_blank"><strong>Indian Creek Plaza — over budget and behind original construction
-                            schedule</a></strong><br>
-                    A deep-dive about delays in the city's then biggest project. Also covered budget overage.
-                    Extensively
-                    used
-                    public records, govt officials' memos and coverage from city agencies' meetings.<br>October 2017
-
+    <nav>
+        <a href="https://areenaarora.com">
+            <i class="fas fa-home fa-2x" aria-hidden="true"></i>
+        </a>
+        &nbsp;
+        <a href="https://areenaarora.com/aboutme">
+            <!-- <i class="fa-solid fa-chalkboard-user fa-2x" aria-hidden="true"></i> -->
+            <i class="fas fa-book fa-2x" aria-hidden="true"></i>
+            About Me
+        </a>
+        <a href="https://areenaarora.com/playground">
+        <i class="fas fa-otter fa-2x"></i>
+        Playground
+        </a>
+        <a href='https://twitter.com/AreenaArora' target='blank' class="right-nav">
+            <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href='https://github.com/areenaarora' target='blank' class="right-nav">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+    </nav>
+    <h1>
+        Areena Arora
+    </h1>
+    <h4>
+        I'm a <span class=blink>data journalist.</span> Here's some of my selected work! :)
+    </h4>
+    <br><br>
+    <button>Data+Viz</button>
+    <br><br>
+    <div class="cards-wrapper">
+        <a href="https://areenaarora.com/new-york-state-spills" target="_blank">
+            <div class="story-card">
+                <img src="card-photos/oil-spill.jpg" alt="Oil spill" style="width:100%">
+                <div class="story-card-container">
+                    <h2>An analysis of hazardous material spill incidents in New York State over five years</h2>
+                    <p>February 2022</p>
                 </div>
-                <div class="column is-one-third">
-
-                    <a href='https://www.idahopress.com/news/local/2cscoop/national-christmas-tree-shortage-drives-up-prices-at-canyon-county-tree-lots/article_1844a843-db04-523e-8db0-17b1d204e7ca.html'
-                        target="_blank"><strong>National Christmas tree shortage drives up prices at Canyon County tree
-                            lots</a></strong><br>
-                    Holiday special on why a decade after the recession Christmas tree got hit.<br>November 2017
-
-                </div>
-                <div class='column is-one-third'>
-                    <a href='https://www.idahopress.com/news/local/2cscoop/at-columbia-high-in-nampa-300-students-walk-out-majority-do-not/article_8b759674-ace6-5b55-adcc-39071b629a11.html'
-                        target="_blank"> <strong>Culvert concerns: Culvert report reveals 11 other structures in
-                            deficient
-                            condition</a><br> </strong>Data-driven story on city's inaction on damaging culverts. Also
-                    inspected inter-agency jurisdiction issues.<br>December 2017
-                </div>
-                <div class="column is-one-third">
-                    <a href='https://www.idahopress.com/news/local/2cscoop/prosecutor-retired-boise-priest-found-with-child-porn-drugs/article_403079a5-4491-57f3-8a9e-9e91e3de8651.html'
-                        target="_blank"><strong>Prosecutor: Retired Boise priest found with child porn,
-                            drugs</a></strong><br>
-                    Court reporting.<br>February 2018
-                </div>
-                <div class='column is-one-third'>
-                    <a href='https://www.idahopress.com/news/local/2cscoop/at-columbia-high-in-nampa-300-students-walk-out-majority-do-not/article_8b759674-ace6-5b55-adcc-39071b629a11.html'
-                        target="_blank"> <strong>At Columbia High in Nampa, 300 students walk out, majority do
-                            not</a><br>
-                    </strong>Part of the paper's series of local schools' coverage on the day of anti-gun walkouts
-                    following the 2018 Parkland shooting.<br>March 2018
-                </div>
-                <div class="column is-one-third">
-
-                    <a href='https://www.idahopress.com/news/local/2cscoop/new-pallet-service-center-to-open-in-caldwell/article_e67a76b4-c8e6-5196-ad5b-73c5cc82f7ac.html'
-                        target="_blank"><strong>Then and now: What Caldwell's foreign trade zone has done for the
-                            area</a></strong><br>
-                    Local government accountability reporting.<br>April 2018
-                </div>
-                </p>
             </div>
-            <br>
-
-            <h4 style='font-size: large; color: rgb(15, 0, 26);'><strong>Feature writing</strong></h3>
-                <br>
-                <div class="columns is-multiline">
-                    <p
-                        style="color:rgb(0, 42, 0); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: medium;">
-                    <div class="column is-one-third">
-                        <a href='https://apnews.com/article/10ab9cb7a5e24bdd86337d36a48c539b' target="_blank"><strong>As
-                                housing
-                                inventory shrinks, people look to living in RVs</a></strong><br>
-                        Special report about Idaho residents choosing to live in RVs full-time owing to sky-rocketing
-                        housing
-                        prices. <br>April 2018
-                    </div>
-                    <br>
-                    <div class="column is-one-third">
-                        <a href='https://www.idahopress.com/news/local/2cscoop/in-the-midst-of-an-immigration-stir-up-one-local-teen-is-ready-to-fight/article_97bde17b-604a-55e0-9dcf-bc946b688916.html'
-                            target="_blank"><strong>In the midst of an immigration stir up, one local teen is ready to
-                                fight</a></strong><br>
-                        September 2017
-                    </div>
-                    <br>
-                    <div class="column is-one-third">
-                        <a href='https://www.idahopress.com/news/local/2cscoop/middleton-samaritan-hopes-to-see-again/article_40cb2683-c384-5b7b-a5fb-0e044968a52e.html'
-                            target="_blank"><strong>Middleton Samaritan hopes to see again</a></strong><br>
-                        Human-interest story on a samaritan's fundraising efforts. <br>November 2017
-                    </div>
-                    <!-- </div> -->
-                    <!-- <br> -->
-                    <!-- <p -->
-                    <!-- style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; color:#704868; font-size: 1 em; font-weight: bolder; text-align: center;"> -->
-                    <!-- Made with 💟 and chai -->
-                    <!-- </p> -->
-                    <!-- </div> -->
+        </a>
+        <a href="https://areenaarora.com/biryani-project" target="_blank">
+            <div class="story-card">
+                <img src="biryani-new.jpg" alt="Biryani" style="width:100%">
+                <div class="story-card-container">
+                    <h2>Where's India's best and cheapest Biryani?</h2>
+                    <p>February 2022</p>
+                </div>
+            </div>
+        </a>
+        <a href="https://github.com/areenaarora/scraping-newsroom-style-guides" target="_blank">
+            <div class="story-card">
+                <img src="card-photos/editor.jpg" alt="editor image" style="width:100%">
+                <div class="story-card-container">
+                    <h2>Comparing different newsrooms' style</h2>
+                    <p>December 2021</p>
+                </div>
+            </div>
+        </a>
+        <a href='https://github.com/areenaarora/areenaarora.com' target="_blank">
+            <div class="story-card">
+                <img src="card-photos/idea.jpg" alt="idea" style="width:100%">
+                <div class="story-card-container">
+                    <h2>My digital playground — This website</h2>
+                    <p>ongoing</p>
+                </div>
+            </div>
+        </a>
+        <a href='https://www.idahopress.com/news/local/2cscoop/indian-creek-plaza-over-budget-and-behind-original-construction-schedule/article_729c087a-780c-5202-bacf-34255edb016d.html'
+            target="_blank">
+            <div class="story-card">
+                <img src="card-photos/construction.jpg" alt="construction" style="width:100%">
+                <div class="story-card-container">
+                    <h2>Indian Creek Plaza — over budget and behind original construction schedule</h2>
+                    <p>October 2017</p>
+                </div>
+            </div>
+        </a>
+        <a href='https://www.idahopress.com/news/local/2cscoop/national-christmas-tree-shortage-drives-up-prices-at-canyon-county-tree-lots/article_1844a843-db04-523e-8db0-17b1d204e7ca.html'
+            target="_blank">
+            <div class="story-card">
+                <img src="card-photos/christmas-tree.jpg" alt="Christmas Tree" style="width:100%">
+                <div class="story-card-container">
+                    <h2>National Christmas tree shortage drives up prices at Canyon County tree lots</h2>
+                    <p>November 2017</p>
+                </div>
+            </div>
+        </a>
+        <a href='https://www.idahopress.com/news/local/2cscoop/at-columbia-high-in-nampa-300-students-walk-out-majority-do-not/article_8b759674-ace6-5b55-adcc-39071b629a11.html'
+            target="_blank">
+            <div class="story-card">
+                <img src="card-photos/culvert.jpg" alt="Culvert" style="width:100%">
+                <div class="story-card-container">
+                    <h2>Culvert concerns: Culvert report reveals 11 other structures in deficient condition</h2>
+                    <p>December 2017</p>
+                </div>
+            </div>
+        </a>
+        <a href='https://www.idahopress.com/news/local/2cscoop/prosecutor-retired-boise-priest-found-with-child-porn-drugs/article_403079a5-4491-57f3-8a9e-9e91e3de8651.html'
+            target="_blank">
+            <div class="story-card">
+                <img src="card-photos/crime.jpg" alt="Crime image" style="width:100%">
+                <div class="story-card-container">
+                    <h2>Prosecutor: Retired Boise priest found with child porn, drugs</h2>
+                    <p>February 2018</p>
+                </div>
+            </div>
+        </a>
+        <a href='https://apnews.com/article/10ab9cb7a5e24bdd86337d36a48c539b' target="_blank">
+            <div class="story-card">
+                <img src="card-photos/RV.jpg" alt="RV" style="width:100%">
+                <div class="story-card-container">
+                    <h2>As housing inventory shrinks, people look to living in RVs</h2>
+                    <p>April 2018</p>
+                </div>
+            </div>
+        </a>
+    </div>
 </body>
