@@ -1,4 +1,5 @@
 [areenaarora.com](areenaarora.com)
+<br>
 Thank you for checking out my website! Here's all about it:
 
 # Tech stack/resources
@@ -23,5 +24,4 @@ On the website now, I have a background that looks like a grid, the font is new 
 
 I also added a new page that’s my virtual playground—a place where I’ll catalogue the projects I’m currently working on, a curated list of interesting things on the internet and a list of books I’ve read and what I’m currently reading.
 
-The website is my space to learn, try new things, show what I know and of course, hopefully impress a recruiter! 
-
+The website is my space to learn, try new things, show what I know and of course, hopefully impress a recruiter!
