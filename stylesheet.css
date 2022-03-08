@@ -1,6 +1,5 @@
 body {
   background-size: 13px 13px;
-  /* background-color: #fffafa; */
   background-color: #f5f5f5;
   background-image: linear-gradient(
       to right,
@@ -48,21 +47,20 @@ body {
 }
 
 h1 {
+  /* Use for page headers */
   font-size: 80px;
   text-align: left;
   color: #02163ee9;
   background-size: contain;
   margin-top: 100px;
-  /* margin:0; */
-  /* vertical-align: middle; */
 }
 
-h4 {
+h2 {
+  /* Use for page sub-heads */
   font-size: 30px;
   text-align: left;
   color: #0d0d0d;
   background-size: contain;
-  /* margin:0; */
 }
 
 .story-card {
@@ -76,12 +74,12 @@ h4 {
   background-color: rgb(243, 242, 237);
 }
 
-h2 {
+h3 {
+  /* Use for story card titles */
   font-size: 14px;
   text-align: left;
   color: #0d0d0d;
   background-size: contain;
-  /* margin-left: 50px; */
 }
 
 p {
