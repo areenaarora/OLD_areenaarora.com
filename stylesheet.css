@@ -160,3 +160,9 @@ a:hover p {
   cursor: grab;
   font-family: "Space Mono", monospace;
 }
+
+.responsive-img {
+  max-width: 30%;
+  max-height: auto;
+  float:right;
+  }
