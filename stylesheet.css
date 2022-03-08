@@ -94,6 +94,7 @@ p {
   gap: 50px;
   flex-wrap: wrap;
 }
+
 a {
   text-decoration: none;
 }
@@ -119,8 +120,9 @@ button {
 .aboutme-p-font
 {
   font-size: 18px; 
-  color: black;">
+  color: black;
 }
+
 a:hover p {
   color: rgb(10, 104, 34);
 }
