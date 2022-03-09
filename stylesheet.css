@@ -117,9 +117,8 @@ button {
   font-family: "Space Mono", monospace;
 }
 
-.aboutme-p-font
-{
-  font-size: 18px; 
+.aboutme-p-font {
+  font-size: 18px;
   color: black;
 }
 
@@ -128,8 +127,8 @@ a:hover p {
 }
 
 .aboutme-div {
-  padding:70px;
-  margin:0;
+  padding: 70px;
+  margin: 0;
 }
 
 .resume-headers {
@@ -140,13 +139,13 @@ a:hover p {
 
 .p-playground {
   font-size: 18px;
-  font-weigh:bold;
+  font-weigh: bold;
   text-align: left;
-  color:black;
+  color: black;
   background-size: contain;
 }
 
-.aboutme-buttons{
+.aboutme-buttons {
   background-color: #000000;
   border: none;
   border-radius: 12px 12px 12px 12px;
@@ -163,6 +162,30 @@ a:hover p {
 
 .responsive-img {
   max-width: 30%;
-  max-height: auto;
-  float:right;
+  width: auto;
+  height: auto;
+  /* float: right; */
+}
+
+.responsive-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Defining styles for smaller screens */
+
+@media (max-width: 768px) {
+  .aboutme-div {
+    padding: 70px 0;
   }
+  .responsive-wrapper {
+    flex-direction: column-reverse;
+  }
+  body {
+    padding: 40px 20px 20px 20px;
+  }
+  .responsive-img {
+    max-width: 80%;
+    width: auto;
+  }
+}
