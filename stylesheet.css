@@ -167,9 +167,29 @@ a:hover p {
   /* float: right; */
 }
 
+.responsive-img-hw {
+  max-width: 40%;
+  width: auto;
+  height: auto;
+  /* float: right; */
+}
+
 .responsive-wrapper {
   display: flex;
   align-items: flex-start;
+}
+
+.hw-responsive-wrapper{
+  display: flex;
+  align-items: flex-start;
+  /* Wraps content!!!! */
+  flex-wrap:wrap;
+  gap:50px;
+}
+
+.hw-responsive-wrapper p {
+  margin-top:0px;
+  margin-bottom:20px;
 }
 
 /* Defining styles for smaller screens */
@@ -188,4 +208,12 @@ a:hover p {
     max-width: 80%;
     width: auto;
   }
+  .responsive-img-hw {
+    max-width: 80%;
+    width: auto;
+  }
+  .hw-responsive-wrapper{
+    flex-direction: column;
+  }
+
 }
