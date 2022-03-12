@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link rel="stylesheet" href="ai2html.css">
+    <link rel="icon" type="image/x-icon" href="sunflower.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/efe58d4158.js" crossorigin="anonymous"></script>
+    <script defer data-domain="areenaarora.com" src="https://plausible.io/js/plausible.js"></script>
+    <title>art-boards homework</title>
+    <style media="screen,print">
+        #g-co2_chart-box,
+        #g-co2_chart-box .g-artboard {
+            margin: 0 auto;
+        }
+
+        #g-co2_chart-box p {
+            margin: 0;
+        }
+
+        #g-co2_chart-box .g-aiAbs {
+            position: absolute;
+        }
+
+        #g-co2_chart-box .g-aiImg {
+            position: absolute;
+            top: 0;
+            display: block;
+            width: 100% !important;
+        }
+
+        #g-co2_chart-box .g-aiSymbol {
+            position: absolute;
+            box-sizing: border-box;
+        }
+
+        #g-co2_chart-box .g-aiPointText p {
+            white-space: nowrap;
+        }
+
+        #g-co2_chart-bigscreen-artboard_1280_800_ {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #g-co2_chart-bigscreen-artboard_1280_800_ p {
+            font-family: georgia, 'times new roman', times, serif;
+            line-height: 21px;
+            height: auto;
+            opacity: 1;
+            letter-spacing: 0em;
+            font-size: 18px;
+            text-align: left;
+            color: rgb(77, 77, 77);
+            text-transform: none;
+            padding-bottom: 0;
+            padding-top: 0;
+            mix-blend-mode: normal;
+            font-style: normal;
+            position: static;
+        }
+
+        #g-co2_chart-bigscreen-artboard_1280_800_ .g-pstyle0 {
+            height: 21px;
+        }
+
+        #g-co2_chart-bigscreen-artboard_1280_800_ .g-pstyle1 {
+            line-height: 29px;
+            font-size: 24px;
+            text-align: justify;
+            color: rgb(0, 0, 0);
+        }
+
+        #g-co2_chart-bigscreen-artboard_1280_800_ .g-pstyle2 {
+            line-height: 27px;
+            height: 27px;
+            font-size: 22px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        #g-co2_chart-bigscreen-artboard_1280_800_ .g-pstyle3 {
+            line-height: 29px;
+            font-size: 24px;
+            color: rgb(255, 148, 10);
+        }
+
+        #g-co2_chart-bigscreen-artboard_1280_800_ .g-pstyle4 {
+            line-height: 29px;
+            font-size: 24px;
+            color: rgb(21, 158, 13);
+        }
+
+        #g-co2_chart-bigscreen-artboard_1280_800_ .g-pstyle5 {
+            line-height: 29px;
+            font-size: 24px;
+            text-align: right;
+            color: rgb(125, 0, 148);
+        }
+
+        #g-co2_chart-bigscreen-artboard_1280_800_ .g-pstyle6 {
+            line-height: 29px;
+            font-size: 24px;
+            color: rgb(255, 31, 57);
+        }
+
+        #g-co2_chart-bigscreen-artboard_1280_800_ .g-pstyle7 {
+            line-height: 27px;
+            height: 27px;
+            font-size: 22px;
+            color: rgb(0, 0, 0);
+        }
+
+        #g-co2_chart-laptop-artboard_640_480_ {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #g-co2_chart-laptop-artboard_640_480_ p {
+            font-family: georgia, 'times new roman', times, serif;
+            line-height: 11px;
+            height: auto;
+            opacity: 1;
+            letter-spacing: 0em;
+            font-size: 9px;
+            text-align: left;
+            color: rgb(77, 77, 77);
+            text-transform: none;
+            padding-bottom: 0;
+            padding-top: 0;
+            mix-blend-mode: normal;
+            font-style: normal;
+            position: static;
+        }
+
+        #g-co2_chart-laptop-artboard_640_480_ .g-pstyle0 {
+            height: 11px;
+        }
+
+        #g-co2_chart-laptop-artboard_640_480_ .g-pstyle1 {
+            line-height: 15px;
+            font-size: 12px;
+            text-align: justify;
+            color: rgb(0, 0, 0);
+        }
+
+        #g-co2_chart-laptop-artboard_640_480_ .g-pstyle2 {
+            line-height: 13px;
+            height: 13px;
+            font-size: 11px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        #g-co2_chart-laptop-artboard_640_480_ .g-pstyle3 {
+            line-height: 15px;
+            font-size: 12px;
+            color: rgb(255, 148, 10);
+        }
+
+        #g-co2_chart-laptop-artboard_640_480_ .g-pstyle4 {
+            line-height: 15px;
+            font-size: 12px;
+            color: rgb(21, 158, 13);
+        }
+
+        #g-co2_chart-laptop-artboard_640_480_ .g-pstyle5 {
+            line-height: 15px;
+            font-size: 12px;
+            text-align: right;
+            color: rgb(125, 0, 148);
+        }
+
+        #g-co2_chart-laptop-artboard_640_480_ .g-pstyle6 {
+            line-height: 15px;
+            font-size: 12px;
+            color: rgb(255, 31, 57);
+        }
+
+        #g-co2_chart-laptop-artboard_640_480_ .g-pstyle7 {
+            line-height: 13px;
+            height: 13px;
+            font-size: 11px;
+            color: rgb(0, 0, 0);
+        }
+
+        #g-co2_chart-mobile-artboard_333_500_ {
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="aboutme-p-font">
+        This is a pretty random page and it has no narrative to it. The only purpose of this page is to practice
+        responsive web design. So, here goes!
+    </p>
+    <div>
+        The charts are crappy, I know. I'm sorry, but the responsiveness works 😅
+    </div>
+
+    <!-- Generated by ai2html v0.106.0 - 2022-03-11 23:54 -->
+    <!-- ai file: co2_chart.ai -->
+
+
+    <div id="g-co2_chart-box" class="ai2html">
+
+        <!-- Artboard: bigscreen-artboard_1280_800_ -->
+        <div id="g-co2_chart-bigscreen-artboard_1280_800_" class="g-artboard" style="width:1280px; height:800px;"
+            data-aspect-ratio="1.6" data-min-width="1280">
+            <div style=""></div>
+            <img id="g-co2_chart-bigscreen-artboard_1280_800_-img" class="g-aiImg" alt=""
+                src="co2_chart-bigscreen-artboard_1280_800_.png" />
+            <div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:9.5869%;margin-top:-11.7px;left:4.8289%;width:43px;">
+                <p class="g-pstyle0">20</p>
+            </div>
+            <div id="g-ai0-2" class="g-Layer_1 g-aiAbs" style="top:20.5%;left:72.6978%;width:11.4063%;">
+                <p class="g-pstyle1">United States</p>
+            </div>
+            <div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:29.0869%;margin-top:-11.7px;left:4.8289%;width:39px;">
+                <p class="g-pstyle0">15</p>
+            </div>
+            <div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="transform: matrix(0,-1,1,0,0,0);transform-origin: 50% 53.2799487508008%;-webkit-transform: matrix(0,-1,1,0,0,0);-webkit-transform-origin: 50% 53.2799487508008%;-ms-transform: matrix(0,-1,1,0,0,0);-ms-transform-origin: 50% 53.2799487508008%;top:49.4055%;margin-top:-15.2px;left:3.6264%;margin-left:-135px;width:270px;">
+                <p class="g-pstyle2">CO2 emissions per capita</p>
+            </div>
+            <div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:48.5869%;margin-top:-11.7px;left:4.8289%;width:41px;">
+                <p class="g-pstyle0">10</p>
+            </div>
+            <div id="g-ai0-6" class="g-Layer_1 g-aiAbs" style="top:55%;left:75.2978%;width:6.1719%;">
+                <p class="g-pstyle3">China</p>
+            </div>
+            <div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:67.9619%;margin-top:-11.7px;left:5.5995%;width:31px;">
+                <p class="g-pstyle0">5</p>
+            </div>
+            <div id="g-ai0-8" class="g-Layer_1 g-aiAbs" style="top:73.625%;left:73.694%;width:4.4531%;">
+                <p class="g-pstyle4">Brazil</p>
+            </div>
+            <div id="g-ai0-9" class="g-Layer_1 g-aiAbs" style="top:77.625%;right:4.6424%;width:10.3906%;">
+                <p class="g-pstyle5">Indonesia</p>
+            </div>
+            <div id="g-ai0-10" class="g-Layer_1 g-aiAbs" style="top:82%;left:64.7579%;width:4.5313%;">
+                <p class="g-pstyle6">India</p>
+            </div>
+            <div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:90.0869%;margin-top:-11.7px;left:5.395%;width:64px;">
+                <p class="g-pstyle0">2000</p>
+            </div>
+            <div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:90.0869%;margin-top:-11.7px;left:14.7974%;width:64px;">
+                <p class="g-pstyle0">2002</p>
+            </div>
+            <div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:90.0869%;margin-top:-11.7px;left:24.1871%;width:64px;">
+                <p class="g-pstyle0">2004</p>
+            </div>
+            <div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:90.0869%;margin-top:-11.7px;left:35.6366%;width:64px;">
+                <p class="g-pstyle0">2006</p>
+            </div>
+            <div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:90.0869%;margin-top:-11.7px;left:43.1367%;width:64px;">
+                <p class="g-pstyle0">2008</p>
+            </div>
+            <div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:90.0869%;margin-top:-11.7px;left:52.5392%;width:61px;">
+                <p class="g-pstyle0">2010</p>
+            </div>
+            <div id="g-ai0-17" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:90.0869%;margin-top:-11.7px;left:61.9288%;width:60px;">
+                <p class="g-pstyle0">2012</p>
+            </div>
+            <div id="g-ai0-18" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:90.0869%;margin-top:-11.7px;left:71.3313%;width:60px;">
+                <p class="g-pstyle0">2014</p>
+            </div>
+            <div id="g-ai0-19" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:90.3369%;margin-top:-11.7px;left:80.406%;width:60px;">
+                <p class="g-pstyle0">2016</p>
+            </div>
+            <div id="g-ai0-20" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:93.6555%;margin-top:-15.2px;left:42.7453%;width:67px;">
+                <p class="g-pstyle7">Year</p>
+            </div>
+        </div>
+
+        <!-- Artboard: laptop-artboard_640_480_ -->
+        <div id="g-co2_chart-laptop-artboard_640_480_" class="g-artboard" style="width:640px; height:480px;"
+            data-aspect-ratio="1.333" data-min-width="640" data-max-width="1279">
+            <div style=""></div>
+            <img id="g-co2_chart-laptop-artboard_640_480_-img" class="g-aiImg" alt=""
+                src="co2_chart-laptop-artboard_640_480_.png" />
+            <div id="g-ai1-1" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:10.8694%;margin-top:-6.2px;left:5.1754%;width:33px;">
+                <p class="g-pstyle0">20</p>
+            </div>
+            <div id="g-ai1-2" class="g-Layer_1 g-aiAbs" style="top:20.2083%;left:74.0514%;width:11.5625%;">
+                <p class="g-pstyle1">United States</p>
+            </div>
+            <div id="g-ai1-3" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:27.3278%;margin-top:-6.2px;left:5.1754%;width:31px;">
+                <p class="g-pstyle0">15</p>
+            </div>
+            <div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="transform: matrix(0,-1,1,0,0,0);transform-origin: 50% 56.696311797018%;-webkit-transform: matrix(0,-1,1,0,0,0);-webkit-transform-origin: 50% 56.696311797018%;-ms-transform: matrix(0,-1,1,0,0,0);-ms-transform-origin: 50% 56.696311797018%;top:44.6806%;margin-top:-7.5px;left:3.9676%;margin-left:-74px;width:148px;">
+                <p class="g-pstyle2">CO2 emissions per capita</p>
+            </div>
+            <div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:43.7861%;margin-top:-6.2px;left:5.1754%;width:31px;">
+                <p class="g-pstyle0">10</p>
+            </div>
+            <div id="g-ai1-6" class="g-Layer_1 g-aiAbs" style="top:49.375%;left:76.69%;width:6.25%;">
+                <p class="g-pstyle3">China</p>
+            </div>
+            <div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:60.2444%;margin-top:-6.2px;left:5.9575%;width:27px;">
+                <p class="g-pstyle0">5</p>
+            </div>
+            <div id="g-ai1-8" class="g-Layer_1 g-aiAbs" style="top:65%;left:75.0623%;width:4.5313%;">
+                <p class="g-pstyle4">Brazil</p>
+            </div>
+            <div id="g-ai1-9" class="g-Layer_1 g-aiAbs" style="top:68.3333%;right:3.0286%;width:10.4688%;">
+                <p class="g-pstyle5">Indonesia</p>
+            </div>
+            <div id="g-ai1-10" class="g-Layer_1 g-aiAbs" style="top:72.0833%;left:65.9937%;width:4.6875%;">
+                <p class="g-pstyle6">India</p>
+            </div>
+            <div id="g-ai1-11" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:78.9944%;margin-top:-6.2px;left:5.7497%;width:43px;">
+                <p class="g-pstyle0">2000</p>
+            </div>
+            <div id="g-ai1-12" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:78.9944%;margin-top:-6.2px;left:15.2918%;width:43px;">
+                <p class="g-pstyle0">2002</p>
+            </div>
+            <div id="g-ai1-13" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:78.9944%;margin-top:-6.2px;left:24.8208%;width:43px;">
+                <p class="g-pstyle0">2004</p>
+            </div>
+            <div id="g-ai1-14" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:78.9944%;margin-top:-6.2px;left:36.4403%;width:43px;">
+                <p class="g-pstyle0">2006</p>
+            </div>
+            <div id="g-ai1-15" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:78.9944%;margin-top:-6.2px;left:44.0517%;width:43px;">
+                <p class="g-pstyle0">2008</p>
+            </div>
+            <div id="g-ai1-16" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:78.9944%;margin-top:-6.2px;left:53.5936%;width:42px;">
+                <p class="g-pstyle0">2010</p>
+            </div>
+            <div id="g-ai1-17" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:78.9944%;margin-top:-6.2px;left:63.1226%;width:41px;">
+                <p class="g-pstyle0">2012</p>
+            </div>
+            <div id="g-ai1-18" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:78.9944%;margin-top:-6.2px;left:72.6647%;width:42px;">
+                <p class="g-pstyle0">2014</p>
+            </div>
+            <div id="g-ai1-19" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:79.2028%;margin-top:-6.2px;left:81.8741%;width:42px;">
+                <p class="g-pstyle0">2016</p>
+            </div>
+            <div id="g-ai1-20" class="g-Layer_1 g-aiAbs g-aiPointText"
+                style="top:81.9722%;margin-top:-7.5px;left:43.6545%;width:45px;">
+                <p class="g-pstyle7">Year</p>
+            </div>
+        </div>
+
+        <!-- Artboard: mobile-artboard_333_500_ -->
+        <div id="g-co2_chart-mobile-artboard_333_500_" class="g-artboard" style="max-width: 375px;max-height: 667px"
+            data-aspect-ratio="0.562" data-min-width="0" data-max-width="639">
+            <div style="padding: 0 0 177.7778% 0;"></div>
+            <img id="g-co2_chart-mobile-artboard_333_500_-img" class="g-aiImg" alt=""
+                src="co2_chart-mobile-artboard_333_500_.png" />
+        </div>
+
+    </div>
+
+    <!-- End ai2html - 2022-03-11 23:54 -->
+
+</body>
