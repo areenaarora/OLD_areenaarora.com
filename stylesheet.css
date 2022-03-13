@@ -282,8 +282,17 @@ ul li:nth-child(3n+2){
   background:rgb(252, 240, 173);
 }
 .reading-list{
-  border:#000 7px ridge;
+  border:#000 3px ridge;
   width:100%;
+  background-color: rgb(255, 234, 77);
+    height: 900px;
+    background: linear-gradient(#fafafa, transparent 25px, #9cdfda 28px);
+    background-size: 30px 30px;
+}
+.reading-list-inside{
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .three-dabbas{
   display:flex;
@@ -295,4 +304,21 @@ ul li:nth-child(3n+2){
   flex-direction: column;
   flex-wrap:wrap;
   align-items:center;
+}
+
+#update {
+  margin: auto;
+  display:grid;
+  font-size: 15px;
+}
+.reading-list-p-font{
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+}
+
+
+li::marker{
+  color:#00a408
+  size:22px;
 }
