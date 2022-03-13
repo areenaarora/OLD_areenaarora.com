@@ -76,7 +76,7 @@ h2 {
 
 h3 {
   /* Use for story card titles */
-  font-size: 14px;
+  font-size: 24px;
   text-align: left;
   color: #0d0d0d;
   background-size: contain;
@@ -215,5 +215,74 @@ a:hover p {
   .hw-responsive-wrapper{
     flex-direction: column;
   }
+}
 
+ul,li{
+  list-style:none;
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ul li {
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:18em;
+  width:18em;
+  padding:2em;
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  /* transition: transform .15s linear; */
+}
+ul li{
+  margin:1.5em;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+ul li {
+  transform: rotate(-6deg);
+}
+ul li:nth-child(odd) {
+  transform:rotate(4deg);
+  position:relative;
+  top:5px;
+}
+ul li:nth-child(1n) {
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+}
+ul li:nth-child(3n) {
+  transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+ul li 
+  {
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
+} 
+ul li:nth-child(odd){
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+ul li:nth-child(2n){
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+ul li:nth-child(4n){
+  position:relative;
+  top:-5px;
+  background:rgb(225, 130, 254);
+}
+.reading-list{
+  border:#000 4mm ridge;
 }
