@@ -80,6 +80,7 @@ h3 {
   text-align: left;
   color: #0d0d0d;
   background-size: contain;
+  margin:0;
 }
 
 p {
@@ -215,37 +216,34 @@ a:hover p {
   .hw-responsive-wrapper{
     flex-direction: column;
   }
-}
-
-ul,li{
-  list-style:none;
+  .three-dabbas{
+    flex-direction: column;
+  }
+  h1{
+    font-size: 5rem;
+  }
 }
 ul{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction:column;
   justify-content: center;
+  margin-top:0;
+  padding-left:0;
 }
 ul li {
   text-decoration:none;
   color:#000;
   background:#ffc;
   display:block;
-  height:18em;
-  width:18em;
+  /* height:18em; */
+  /* width:18em; */
   padding:2em;
   box-shadow:10px 10px 7px rgba(0,0,0,.7);
-  /* transition: transform .15s linear; */
-}
-ul li{
+  max-width:500px;
   margin:1.5em;
-}
-.column {
-  float: left;
-  width: 33.33%;
-}
-ul li {
   transform: rotate(-6deg);
 }
+
 ul li:nth-child(odd) {
   transform:rotate(4deg);
   position:relative;
@@ -268,21 +266,33 @@ ul li
   position:relative;
   z-index:5;
 } 
-ul li:nth-child(odd){
+ul li:nth-child(3n){
   position:relative;
   top:5px;
   background:#cfc;
 }
-ul li:nth-child(2n){
+ul li:nth-child(3n+1){
   position:relative;
   top:-5px;
   background:#ccf;
 }
-ul li:nth-child(4n){
+ul li:nth-child(3n+2){
   position:relative;
   top:-5px;
-  background:rgb(225, 130, 254);
+  background:rgb(252, 240, 173);
 }
 .reading-list{
-  border:#000 4mm ridge;
+  border:#000 7px ridge;
+  width:100%;
+}
+.three-dabbas{
+  display:flex;
+  gap:50px;
+}
+.sticky-notes {
+  /* max-width:90vw; */
+  display:flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  align-items:center;
 }
