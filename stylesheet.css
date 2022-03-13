@@ -319,6 +319,7 @@ ul li:nth-child(3n+2){
 
 
 li::marker{
-  color:#00a408
-  size:22px;
+  color:#a40000;
+  font-weight:bold;
+  font-size:150%;
 }
