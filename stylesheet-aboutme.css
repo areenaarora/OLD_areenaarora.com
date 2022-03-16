@@ -2,10 +2,7 @@
   padding: 70px;
   margin: 0;
 }
-.aboutme-p-font {
-  font-size: 18px;
-  color: black;
-}
+
 .aboutme-buttons {
   background-color: #000000;
   border: none;
@@ -20,3 +17,8 @@
   cursor: grab;
   font-family: "Space Mono", monospace;
 }
+
+@media (max-width: 768px) {
+  .aboutme-div {
+    padding: 70px 0;
+  }
