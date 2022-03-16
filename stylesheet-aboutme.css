@@ -1,22 +1,3 @@
-body {
-  background-size: 13px 13px;
-  background-color: #f5f5f5;
-  background-image: linear-gradient(
-      to right,
-      #e5e7e9 0.8px,
-      transparent 0.001px
-    ),
-    linear-gradient(to bottom, #e5e7e9 0.8px, transparent 0.001px);
-  padding: 40px 100px 100px 100px;
-  margin: 0 auto;
-  font-family: "Space Mono", monospace;
-}
-.right-nav {
-  float: right;
-  padding: 10px 8px;
-}
-
-/* Unique to about me page */
 .aboutme-div {
   padding: 70px;
   margin: 0;
@@ -26,16 +7,16 @@ body {
   color: black;
 }
 .aboutme-buttons {
-    background-color: #000000;
-    border: none;
-    border-radius: 12px 12px 12px 12px;
-    color: rgb(255, 255, 255);
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-flex;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: grab;
-    font-family: "Space Mono", monospace;
-  }
+  background-color: #000000;
+  border: none;
+  border-radius: 12px 12px 12px 12px;
+  color: rgb(255, 255, 255);
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: grab;
+  font-family: "Space Mono", monospace;
+}
