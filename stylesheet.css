@@ -5,10 +5,15 @@ body {
       to right,
       #e5e7e9 0.8px,
       transparent 0.001px
-    ),
-    linear-gradient(to bottom, #e5e7e9 0.8px, transparent 0.001px); */
-    /* background-image: linear-gradient(to right  bottom, #ff0091, #ff336e, #ff5e4e, #ff852f, #ffa813, #ffac0e, #ffb007, #ffb400, #ff9b00, #ff7f00, #ff6000, #ff380a); */
-    background-image: linear-gradient(to left bottom, #ffcc00, #ffaa00, #ff8500, #ff5900, #ff0000);
+    /* ), */
+  background-image: linear-gradient(
+    to left bottom,
+    #ffcc00,
+    #ffaa00,
+    #ff8500,
+    #ff5900,
+    #ff0000
+  );
   padding: 40px 100px 100px 100px;
   margin: 0 auto;
   font-family: "Space Mono", monospace;
@@ -49,7 +54,7 @@ body {
 }
 
 nav a {
-  color:#000;
+  color: #000;
 }
 
 /* All the fonts! */
@@ -77,7 +82,7 @@ h3 {
   text-align: left;
   color: #0d0d0d;
   background-size: contain;
-  margin:0;
+  margin: 0;
 }
 
 p {
@@ -156,17 +161,17 @@ a:hover p {
   align-items: flex-start;
 }
 
-.hw-responsive-wrapper{
+.hw-responsive-wrapper {
   display: flex;
   align-items: flex-start;
   /* Wraps content!!!! */
-  flex-wrap:wrap;
-  gap:50px;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .hw-responsive-wrapper p {
-  margin-top:0px;
-  margin-bottom:20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 /* Defining styles for smaller screens */
@@ -186,11 +191,13 @@ a:hover p {
     max-width: 80%;
     width: auto;
   }
-  .hw-responsive-wrapper{
+  .hw-responsive-wrapper {
     flex-direction: column;
   }
-  h1{
+  h1 {
     font-size: 40px;
   }
-  .right-nav {position: relative;}
+  .right-nav {
+    position: relative;
+  }
 }
