@@ -10,36 +10,20 @@ body {
   padding: 40px 100px 100px 100px;
   margin: 0;
   font-family: "Space Mono", monospace;
-}
   padding: 40px 100px 100px 100px;
   margin: 0 auto;
   font-family: "Space Mono", monospace;
 }
 
-.blink {
-  color: #000;
-  font-weight: bold;
-  animation: blinkingText 18s infinite;
+.blinking{
+  animation:blinkingText 5.2s infinite;
 }
-@keyframes blinkingText {
-  0% {
-    color: #015243;
-  }
-  25% {
-    color: #3079e8d6;
-  }
-  35% {
-    color: #9b5bf4d6;
-  }
-  50% {
-    color: hsl(319, 92%, 71%);
-  }
-  75% {
-    color: #edcb6c;
-  }
-  100% {
-    color: #00a408;
-  }
+@keyframes blinkingText{
+  0%{     color: rgb(233, 8, 8);    }
+  49%{    color: rgb(247, 207, 47); }
+  60%{    color:rgb(41, 139, 11); }
+  99%{    color:rgb(10, 196, 199);  }
+  100%{   color:rgb(128, 0, 113);    }
 }
 
 .highlight {
