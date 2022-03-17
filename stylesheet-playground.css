@@ -18,11 +18,11 @@
 }
 
 .reading-list {
-  border: #000 3px ridge;
+  border: #000 1.5px ridge;
   width: 100%;
   background-color: rgb(255, 234, 77);
   height: 900px;
-  background: linear-gradient(#fafafa, transparent 25px, #9cdfda 28px);
+  /* background: linear-gradient(#fafafa, transparent 25px, #9cdfda 28px); */
   background-size: 30px 30px;
 }
 
