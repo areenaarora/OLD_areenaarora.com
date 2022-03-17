@@ -8,11 +8,11 @@ body {
     /* ), */
   background-image: linear-gradient(
     to left bottom,
-    #ffcc00,
-    #ffaa00,
+    #fed73b,
+    #ffcc05,
     #ff8500,
     #ff5900,
-    #ff0000
+    #fd3a3a
   );
   padding: 40px 100px 100px 100px;
   margin: 0 auto;
