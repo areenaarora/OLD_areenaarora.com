@@ -15,6 +15,7 @@ body {
   margin: 0 auto;
   font-family: "Space Mono", monospace;
 }
+
 .blink {
   color: #000;
   font-weight: bold;
@@ -24,20 +25,20 @@ body {
   0% {
     color: #015243;
   }
-  20% {
-    color: #053c8fd6;
+  25% {
+    color: #3079e8d6;
   }
-  40% {
-    color: #000000d6;
+  35% {
+    color: #9b5bf4d6;
   }
-  60% {
-    color: hsla(107, 100%, 50%, 0.92);
+  50% {
+    color: hsl(319, 92%, 71%);
   }
-  80% {
+  75% {
     color: #edcb6c;
   }
   100% {
-    color: #008ba4;
+    color: #00a408;
   }
 }
 
