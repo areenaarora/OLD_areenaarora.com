@@ -7,7 +7,7 @@ body {
       transparent 0.001px
     ),
     linear-gradient(to bottom, #e5e7e9 0.8px, transparent 0.001px); */
-    background-image: linear-gradient(to right bottom, #ff0091, #ff336e, #ff5e4e, #ff852f, #ffa813, #ffac0e, #ffb007, #ffb400, #ff9b00, #ff7f00, #ff6000, #ff380a);
+    background-image: linear-gradient(to right  bottom, #ff0091, #ff336e, #ff5e4e, #ff852f, #ffa813, #ffac0e, #ffb007, #ffb400, #ff9b00, #ff7f00, #ff6000, #ff380a);
   padding: 40px 100px 100px 100px;
   margin: 0 auto;
   font-family: "Space Mono", monospace;
@@ -21,20 +21,20 @@ body {
   0% {
     color: #015243;
   }
-  25% {
-    color: #3079e8d6;
+  20% {
+    color: #053c8fd6;
   }
-  35% {
-    color: #9b5bf4d6;
+  40% {
+    color: #000000d6;
   }
-  50% {
-    color: hsl(319, 92%, 71%);
+  60% {
+    color: hsla(107, 100%, 50%, 0.92);
   }
-  75% {
+  80% {
     color: #edcb6c;
   }
   100% {
-    color: #00a408;
+    color: #008ba4;
   }
 }
 
