@@ -1,12 +1,13 @@
 body {
-  background-size: 13px 13px;
+  /* background-size: 13px 13px;
   background-color: #f5f5f5;
   background-image: linear-gradient(
       to right,
       #e5e7e9 0.8px,
       transparent 0.001px
     ),
-    linear-gradient(to bottom, #e5e7e9 0.8px, transparent 0.001px);
+    linear-gradient(to bottom, #e5e7e9 0.8px, transparent 0.001px); */
+    background-image: linear-gradient(to right bottom, #ff0091, #ff336e, #ff5e4e, #ff852f, #ffa813, #ffac0e, #ffb007, #ffb400, #ff9b00, #ff7f00, #ff6000, #ff380a);
   padding: 40px 100px 100px 100px;
   margin: 0 auto;
   font-family: "Space Mono", monospace;
