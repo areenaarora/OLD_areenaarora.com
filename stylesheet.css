@@ -131,6 +131,28 @@ a:hover p {
   /* float: right; */
 }
 
+.responsive-img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.header-container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left-text {
+  position: absolute;
+  color:aliceblue;
+  font-size: 60px;
+  bottom: 80px;
+  left: 16px;
+  text-shadow: 2px 4px #3a3a3a;
+}
+
 .responsive-img-hw {
   max-width: 40%;
   width: auto;
