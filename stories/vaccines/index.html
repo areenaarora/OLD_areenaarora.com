@@ -19,28 +19,7 @@
             margin: 0 auto;
         }
 
-        .sticky-thing {
-            position: -webkit-sticky;
-            position: sticky;
-            left: 0;
-            width: 100%;
-            margin: 0;
-            /* background-color: #8a8a8a; */
-            z-index: 0;
-            top: 12.5vh;
-            height: 75vh;
-            /* Center everything inside */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .sticky-thing p {
-            font-size: 8rem;
-            font-weight: 900;
-            color: #fff;
-        }
-
+        
         .step {
             margin: 0 auto 1.5rem auto;
             color: #fff;
@@ -89,10 +68,7 @@
             </p>
         </div>
         <!-- Insert scroll rules here for timeline -->
-        <section id="scrolly">
-            <div class="sticky-thing">
-                <p>0</p>
-              </div>      
+        <section id="scrolly">    
             <article>
                 <div class="step">
                     <p class="dates">
@@ -314,15 +290,11 @@
         Of its eight ingredients, Pfizer has four in common with Moderna's six. Both these vaccines are mRNA type, meaning they are vaccines that teach our cells how to make a protein that will trigger an immune response. Johnson and Johnson vaccine, on the other hand, works by introducing a piece of modified virus to help the body generate an immune response.
     </p>
     </main>
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/intersection-observer"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <script>
-      // using d3 for convenience
-      var main = document.querySelector("main");
-      var scrolly = main.querySelector("#scrolly");
-      var sticky = scrolly.querySelector(".sticky-thing");
+      var scrolly = document.querySelector("#scrolly");
       var article = scrolly.querySelector("article");
-      var steps = article.querySelectorAll(".step");
 
       // initialize the scrollama
       var scroller = scrollama();
@@ -330,30 +302,30 @@
       // scrollama event handlers
       function handleStepEnter(response) {
         // response = { element, direction, index }
-        var el = response.element;
+        // add to color to current step
+        response.element.classList.add("is-active");
+      }
 
-        // remove is-active from all steps
-        // then add is-active to this step
-        steps.forEach(step => step.classList.remove('is-active'));
-        el.classList.add('is-active');
-
-        // update graphic based on step
-        sticky.querySelector("p").innerText = el.dataset.step;
+      function handleStepExit(response) {
+        // response = { element, direction, index }
+        // remove color from current step
+        response.element.classList.remove("is-active");
       }
 
       function init() {
-        // 2. setup the scroller passing options
+        // 1. setup the scroller with the bare-bones options
         // 		this will also initialize trigger observations
-        // 3. bind scrollama event handlers (this can be chained like below)
+        // 2. bind scrollama event handlers (this can be chained like below)
         scroller
           .setup({
             step: "#scrolly article .step",
-            offset: 0.33,
-            debug: true
+            debug: true,
+            offset: 0.5
           })
-          .onStepEnter(handleStepEnter);
+          .onStepEnter(handleStepEnter)
+          .onStepExit(handleStepExit);
 
-        // setup resize event
+        // 3. setup resize event
         window.addEventListener("resize", scroller.resize);
       }
 
