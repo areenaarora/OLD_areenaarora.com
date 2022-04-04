@@ -9,14 +9,15 @@ h2 {
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 135px;
+    font-size: 80px;
     /* animation: showup 7s infinite;
     animation: reveal 2s infinite; */
 }
 
 p {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 35px;
+    font-size: 25px;
+    line-height: 38px;
 }
 
 .dates{
@@ -32,10 +33,11 @@ p {
 }
 
 .first-scroll {
-    text-align: center;
+    text-align: left;
     margin: auto;
-    padding-top:30vh;
-    padding-bottom:30vh;
+    padding-top:2vh;
+    padding-bottom:8vh;
+    padding-left:20vh;
 }
 
 .second-scroll {
