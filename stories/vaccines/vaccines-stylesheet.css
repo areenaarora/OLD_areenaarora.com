@@ -9,9 +9,7 @@ h2 {
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 80px;
-    /* animation: showup 7s infinite;
-    animation: reveal 2s infinite; */
+    font-size: 60px;
 }
 
 p {
@@ -38,6 +36,7 @@ p {
     padding-top:2vh;
     padding-bottom:8vh;
     padding-left:20vh;
+    padding-right:20vh;
 }
 
 .second-scroll {
