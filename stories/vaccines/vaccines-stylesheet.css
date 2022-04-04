@@ -33,11 +33,17 @@ p {
 .first-scroll {
     text-align: center;
     margin: auto;
+    padding-top:30vh;
+    padding-bottom:30vh;
 }
 
 .second-scroll {
     text-align: left;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    max-width: 1500px;
+    margin:0 auto;
+}
+
+.third-scroll{
+    max-width: 1500px;
+    margin:0 auto;
 }
