@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(253, 253, 253);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 25px;
+}
+h2 {
+    /* for quotes */
+    font-size: 20px;
+    color: rgb(165, 43, 43);
+}
+
+figcaption {
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.div-figure {
+    align-items: center;
+    padding-right: -10px;
+    padding-left: 210px;
+}
+
+div {
+    padding-left: 300px;
+    padding-right: 300px;
+    /* padding-top: 100px; */
+}
