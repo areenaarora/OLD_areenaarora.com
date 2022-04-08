@@ -153,6 +153,15 @@ a:hover p {
   text-shadow: 2px 4px #3a3a3a;
 }
 
+.bottom-left-text-new{
+  position: absolute;
+  color:rgb(50, 202, 12);
+  font-size: 60px;
+  bottom: 80px;
+  left: 16px;
+  text-shadow: 2px 4px #f5e617;
+}
+
 .responsive-img-hw {
   max-width: 40%;
   width: auto;
