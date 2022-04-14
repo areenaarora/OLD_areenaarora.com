@@ -12,7 +12,6 @@ body {
   font-family: "Space Mono", monospace;
   padding: 40px 100px 100px 100px;
   margin: 0 auto;
-  font-family: "Space Mono", monospace;
 }
 
 .blinking{
@@ -68,7 +67,7 @@ h3 {
 }
 
 p {
-  /* Main body text everywhere! */
+  /* Main body text for cards */
   font-size: 18px;
   color: black;
 }
@@ -136,21 +135,6 @@ a:hover p {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-
-.header-container{
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.bottom-left-text {
-  position: absolute;
-  color:aliceblue;
-  font-size: 60px;
-  bottom: 80px;
-  left: 16px;
-  text-shadow: 2px 4px #3a3a3a;
 }
 
 .bottom-left-text-new{

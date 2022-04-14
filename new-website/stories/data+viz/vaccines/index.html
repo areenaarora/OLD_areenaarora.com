@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vaccines-stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="sunflower.png">
+    <!-- meta tags -->
+    <meta property="og:title" content="How different are different COVID vaccines?">
+    <meta property="og:description" content="A quick data dive!">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://areenaarora.com/stories/vaccines/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@AreenaArora">
+    <!-- end of meta tags -->
+    <style>
+        #scrolly {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.98);
+            padding: 1rem;
+        }
+
+        article {
+            position: relative;
+            padding: 0;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .scrolly-overlay {
+            position: relative;
+            padding: 0;
+            max-width: 35rem;
+            margin: 0 auto;
+        }
+
+        #scrolly-2 {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.98);
+            padding: 1rem;
+        }
+
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            left: 0;
+            margin: 0;
+            z-index: 0;
+            top: 12.5vh;
+            height: 75vh;
+            /* Center everything inside */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .step {
+            display: flex;
+            /* gap: 25px; */
+            margin: 0 auto 2.5rem auto;
+            color: #fff;
+            /* background-color: rgba(0, 0, 0, 0.1); */
+        }
+
+        .scrolly-overlay .step {
+            margin-bottom: 500px;
+        }
+
+        .scrolly-overlay .step:last-child {
+            margin-bottom: 400px;
+        }
+
+        /* .step .dates {
+            flex-shrink:0;
+            width: 250px;
+        } */
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step.is-active p {
+            background-color: goldenrod;
+            /* color: #3b3b3b; */
+        }
+
+        .step p {
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 1.5rem;
+            background-color: #4d4d4e;
+        }
+    </style>
+    <style media="screen,print">
+        #g-venn_svg-box,
+        #g-venn_svg-box .g-artboard {
+            margin: 0 auto;
+        }
+
+        #g-venn_svg-box p {
+            margin: 0;
+        }
+
+        #g-venn_svg-box .g-aiAbs {
+            position: absolute;
+        }
+
+        #g-venn_svg-box .g-aiImg {
+            position: absolute;
+            top: 0;
+            display: block;
+            width: 100% !important;
+        }
+
+        #g-venn_svg-box .g-aiSymbol {
+            position: absolute;
+            box-sizing: border-box;
+        }
+
+        #g-venn_svg-box .g-aiPointText p {
+            white-space: nowrap;
+        }
+
+        #g-venn_svg-Artboard_1 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #g-venn_svg-Artboard_1 p {
+            font-weight: 500;
+            line-height: 26px;
+            height: auto;
+            opacity: 1;
+            letter-spacing: 0em;
+            font-size: 18px;
+            text-align: left;
+            color: rgb(113, 121, 126);
+            text-transform: none;
+            padding-bottom: 0;
+            padding-top: 0;
+            mix-blend-mode: normal;
+            font-style: normal;
+            position: static;
+        }
+
+        #g-venn_svg-Artboard_1 .g-pstyle0 {
+            line-height: 26px;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+        }
+
+        #g-venn_svg-Artboard_1 .g-pstyle1 {
+            height: 20px;
+        }
+
+        #g-venn_svg-Artboard_1 .g-pstyle2 {
+            line-height: 16px;
+            height: 22px;
+            letter-spacing: 0.001em;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+        }
+
+        #g-venn_svg-Artboard_1 .g-pstyle3 {
+            line-height: 20px;
+            height: 11px;
+            font-size: 10px;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<title>COVID-vaccines</title>
+
+<body>
+    <main>
+        <div class="div-main">
+            <h2>mRNA. Pandemic. COVID-19. Delta. Omicron. coronavirus. masks. Epidemic. Pfizer. Booster. Moderna.
+                Covishield-Astrazeneca. Covaxin. Various variants. CDC guidelines
+            </h2>
+        </div>
+        <div class="first-scroll">
+            <h1>
+                Overwhelmed with information overload? Here's a simplified data dive into COVID vaccines!
+            </h1>
+        </div>
+        <div class="second-scroll">
+            <p>
+                Over two years ago, our lives came to a standstill abruptly, unleashing a kind of chaos never seen
+                before. The word "unprecedented" was used at an unprecented rate. I've been curious about COVID
+                vaccines' development and wanted to do a mini-data dive.
+            </p>
+            <p>
+                But first, a quick recap!
+            </p>
+        </div>
+        <!-- Insert scroll rules here for timeline -->
+        <section id="scrolly">
+            <article>
+                <div class="step">
+                    <p class="dates">
+                        December 31, 2019
+                    </p>
+                    <p>The WHO China office is informed of a number cases of pneumonia of unknown etiology (unknown
+                        cause)
+                        detected in Wuhan.
+                    </p>
+                </div>
+                <div class="step">
+                    <p class="dates">
+                        March 11, 2020</p>
+                    <p>WHO declares COVID-19 a pandemic.
+                    </p>
+                </div>
+                <div class="step">
+                    <p class="dates">March 17, 2020
+                    </p>
+                    <p>
+                        First human trial of a COVID vaccine begins, done for Moderna's vaccine
+                    </p>
+                </div>
+                <div class="step">
+                    <p class="dates">
+                        April 30, 2020
+                    </p>
+                    <p>President Trump launches Operation Warp Speed, an initiavtive to produce a COVID vaccine.
+                    </p>
+                </div>
+                <div class="step">
+                    <p class="dates">May 28, 2020</p>
+                    <p>United States' COVID-19 death toll surpasses 100,000.
+                    </p>
+                </div>
+                <div class="step">
+                    <p class="dates">December 11, 2020</p>
+                    <p>
+                        FDA issues an Emergency Use Authorization (EUA) for the first COVID-19
+                        vaccine– the Pfizer-BioNTech COVID-19 vaccine.
+                    </p>
+                </div>
+                <div class="step">
+                    <p class="dates">December 18, 2020</p>
+                    <p>The U.S. FDA issues an Emergency Use Authorization for the second
+                        COVID-19
+                        vaccine – the Moderna COVID-19 vaccine.</p>
+                </div>
+                <div class="step">
+                    <p class="dates">January 26, 2021
+                    </p>
+                    <p>Worldwide COVID-19 cases surpass 100 million.</p>
+                </div>
+                <div class="step">
+                    <p class="dates">February 27, 2021</p>
+                    <p>FDA approves emergency use authorization for Johnson and Johnson's one shot COVID-19 vaccine.</p>
+                </div>
+                <div class="step">
+                    <p class="dates">April 21, 2021</p>
+                    <p>U.S. surpasses 200 million vaccinations administered.</p>
+                </div>
+                <div class="step">
+                    <p class="dates">November 29, 2021</p>
+                    <p>CDC recommends everyone over 18 years old who received a Pfizer or Moderna vaccine receive a
+                        booster shot six months after they are fully vaccinated. </p>
+                </div>
+            </article>
+        </section>
+        <!-- Timeline scroll ends -->
+        <!-- Vaccine information -->
+        <div class="third-scroll">
+            <p>
+                On CDC’s website, the words explaining vaccine ingredients for both Pfizer and Moderna start with the
+                same two sentences:</p>
+            <p><mark>
+                    All COVID-19 vaccine ingredients are safe. Nearly all the ingredients in COVID-19 vaccines are
+                    ingredients found in many foods—fats, sugars, and salts. The < insert name of vaccine> COVID-19
+                        vaccine
+                        also contains a harmless piece of messenger RNA (mRNA).</mark></p>
+            <br><br>
+            <!-- include chart -->
+
+            <!-- Generated by ai2html v0.106.0 - 2022-04-05 00:29 -->
+            <!-- ai file: visualization.ai -->
+            <style media="screen,print">
+                #g-visualization-box,
+                #g-visualization-box .g-artboard {
+                    margin: 0 auto;
+                }
+
+                #g-visualization-box p {
+                    margin: 0;
+                }
+
+                #g-visualization-box .g-aiAbs {
+                    position: absolute;
+                }
+
+                #g-visualization-box .g-aiImg {
+                    position: absolute;
+                    top: 0;
+                    display: block;
+                    width: 100% !important;
+                }
+
+                #g-visualization-box .g-aiSymbol {
+                    position: absolute;
+                    box-sizing: border-box;
+                }
+
+                #g-visualization-box .g-aiPointText p {
+                    white-space: nowrap;
+                }
+
+                #g-visualization-Artboard_1 {
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                #g-visualization-Artboard_1 p {
+                    font-weight: 500;
+                    line-height: 14px;
+                    height: auto;
+                    opacity: 1;
+                    letter-spacing: 0em;
+                    font-size: 12px;
+                    text-align: left;
+                    color: rgb(0, 0, 0);
+                    text-transform: none;
+                    padding-bottom: 0;
+                    padding-top: 0;
+                    mix-blend-mode: normal;
+                    font-style: normal;
+                    position: static;
+                }
+
+                #g-visualization-Artboard_1 .g-pstyle0 {
+                    height: 14px;
+                }
+
+                #g-visualization-Artboard_1 .g-pstyle1 {
+                    line-height: 26px;
+                    height: 26px;
+                    font-size: 16px;
+                }
+
+                #g-visualization-Artboard_1 .g-pstyle2 {
+                    height: 14px;
+                    text-align: center;
+                }
+
+                #g-visualization-Artboard_1 .g-pstyle3 {
+                    line-height: 12px;
+                    height: 12px;
+                    font-size: 10px;
+                }
+
+                #g-visualization-Artboard_1 .g-pstyle4 {
+                    line-height: 13px;
+                    height: 13px;
+                    font-size: 11px;
+                }
+
+                #g-visualization-Artboard_1 .g-pstyle5 {
+                    font-weight: 700;
+                    height: 14px;
+                    font-size: 11px;
+                }
+            </style>
+
+            <div id="g-visualization-box" class="ai2html">
+
+                <!-- Artboard: Artboard_1 -->
+                <div id="g-visualization-Artboard_1" class="g-artboard" style="width: 612px; height: 477px"
+                    data-aspect-ratio="1.283" data-min-width="0">
+                    <div style="padding: 0 0 77.9412% 0;"></div>
+                    <img id="g-visualization-Artboard_1-img" class="g-aiImg" alt=""
+                        src="./ai2html-output/visualization-Artboard_1.png" />
+                    <div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:2.5236%;margin-top:-9px;left:5.5966%;width:84px;">
+                        <p class="g-pstyle0">350 million</p>
+                    </div>
+                    <div id="g-ai0-2" class="g-ai2html-settings g-aiAbs g-aiPointText"
+                        style="top:11.9826%;margin-top:-27.2px;left:19.8743%;width:343px;">
+                        <p class="g-pstyle1">Top three COVID-19 vaccine manufacturers</p>
+                        <p class="g-pstyle1">in the US, by number of doses</p>
+                    </div>
+                    <div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:14.8926%;margin-top:-9px;left:5.5966%;width:83px;">
+                        <p class="g-pstyle0">300 million</p>
+                    </div>
+                    <div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:27.2616%;margin-top:-9px;left:5.5966%;width:83px;">
+                        <p class="g-pstyle0">250 million</p>
+                    </div>
+                    <div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:39.4209%;margin-top:-9px;left:5.5966%;width:83px;">
+                        <p class="g-pstyle0">200 million</p>
+                    </div>
+                    <div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="transform: matrix(0.0001,-1,1,0.0001,0,0);transform-origin: 50% 55.5324436760495%;-webkit-transform: matrix(0.0001,-1,1,0.0001,0,0);-webkit-transform-origin: 50% 55.5324436760495%;-ms-transform: matrix(0.0001,-1,1,0.0001,0,0);-ms-transform-origin: 50% 55.5324436760495%;top:51.7899%;margin-top:-9px;left:3.469%;margin-left:-54px;width:108px;">
+                        <p class="g-pstyle2">Number of doses</p>
+                    </div>
+                    <div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:51.7899%;margin-top:-9px;left:5.5966%;width:83px;">
+                        <p class="g-pstyle0">150 million</p>
+                    </div>
+                    <div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:64.1588%;margin-top:-9px;left:5.5966%;width:83px;">
+                        <p class="g-pstyle0">100 million</p>
+                    </div>
+                    <div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:76.3182%;margin-top:-9px;left:6.5903%;width:76px;">
+                        <p class="g-pstyle0">50 million</p>
+                    </div>
+                    <div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:86.7662%;margin-top:-7.9px;left:86.3896%;width:50px;">
+                        <p class="g-pstyle3">Pfizer</p>
+                    </div>
+                    <div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:88.0241%;margin-top:-7.9px;left:12.9314%;width:28px;">
+                        <p class="g-pstyle3">0</p>
+                    </div>
+                    <div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:90.0142%;margin-top:-8.4px;left:23.4861%;width:42px;">
+                        <p class="g-pstyle4">J&J</p>
+                    </div>
+                    <div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:90.2238%;margin-top:-8.4px;left:41.551%;width:68px;">
+                        <p class="g-pstyle4">Moderna</p>
+                    </div>
+                    <div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:90.4621%;margin-top:-8.5px;left:62.9342%;width:51px;">
+                        <p class="g-pstyle4">Other</p>
+                    </div>
+                    <div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText"
+                        style="top:96.4507%;margin-top:-9.1px;left:47.843%;width:147px;">
+                        <p class="g-pstyle5">Vaccine manufacturer</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- End ai2html - 2022-04-05 00:29 -->
+
+
+            <p>
+                This, and the fact that different pharma companies’ vaccines showed different efficiency ratings
+                in
+                testing, got me thinking how different are they anyway? Since they’re all meant to fight
+                COVID-19,
+                aren’t they bound to be fairly similar in composition? I’m no biochemist, of course, but I
+                wanted an
+                easily digestible, data-backed explanation for myself. So, here we are!
+            </p>
+            <p>
+                👩🏻‍🔬 + 📊 + 📝 = this
+            </p>
+            <p>
+                I looked through the list of ingredients for the top three vaccines being used in the US:
+                Pfizer,
+                Moderna
+                and J&J. Both Pfizer and Moderna have fairly similar efficacy ratings at 95% and 94%
+                respectively,
+                according
+                to the
+                CDC. Johnson and Johnson's vaccine is rated at 66.3% for its efficacy.
+            </p>
+
+            <p>I assumed Pfizer and Moderna then must be fairly similar in their composition given their similar
+                efficacy
+                ratings and use.</p>
+            <section id="scrolly-2">
+                <div class="sticky">
+                    <!-- Generated by ai2html v0.106.0 - 2022-04-04 02:23 -->
+                    <!-- ai file: venn.svg -->
+
+                    <div id="g-venn_svg-box" class="ai2html">
+
+                        <!-- Artboard: Artboard_1 -->
+                        <div id="g-venn_svg-Artboard_1" class="g-artboard" style="width: 854px; height: 576px"
+                            data-aspect-ratio="1.5" data-min-width="0">
+                            <div style="padding: 0 0 66.6667% 0;"></div>
+                            <img id="g-venn_svg-Artboard_1-img" class="g-aiImg" alt="Number of ingredients in top three US' manufacturers' 
+                            COVID-19 vaccines" src="./ai2html-output-venn/venn_svg-Artboard_1.png" />
+                            <div id="g-ai0-1" class="g-Layer_1 g-aiAbs"
+                                style="top:19.0972%;left:10.8669%;width:81.0185%;">
+                                <p class="g-pstyle0">Number of ingredients in top three US&rsquo;
+                                    manufacturers&rsquo;
+                                    COVID-19 vaccines</p>
+                            </div>
+                            <div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText"
+                                style="top:37.8986%;margin-top:-10.1px;left:14.1004%;width:67px;">
+                                <p class="g-pstyle1"> Pfizer</p>
+                                <p class="g-pstyle1">95% effective</p>
+                            </div>
+                            <div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText"
+                                style="top:48.0677%;margin-top:-18.4px;left:30.8489%;width:66px;">
+                                <p class="g-pstyle2">Four</p>
+                                <p class="g-pstyle2">common </p>
+                                <p class="g-pstyle2">ingredients</p>
+                            </div>
+                            <div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText"
+                                style="top:72.6208%;margin-top:-10.1px;left:69.1144%;width:87px;">
+                                <p class="g-pstyle1">Johnson & Johnson</p>
+                                <p class="g-pstyle1"> 66.3% effective</p>
+                            </div>
+                            <div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText"
+                                style="top:75.3986%;margin-top:-10.1px;left:44.8187%;width:67px;">
+                                <p class="g-pstyle1"> Moderna</p>
+                                <p class="g-pstyle1">94% effective</p>
+                            </div>
+                            <div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText"
+                                style="top:88.7719%;margin-top:-5.7px;left:75.7677%;width:70px;">
+                                <p class="g-pstyle3">Source: CDC</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End ai2html - 2022-04-04 02:23 -->
+
+                </div>
+                <div class="scrolly-overlay">
+                    <div class="step" id="step-zero">
+                        <p>Pfizer and Moderna are both mRNA type of vaccines</p>
+                    </div>
+                    <div class="step" id="step-one">
+                        <p>Both Pfizer and Moderna have four common ingredients and are similar in efficacy
+                            rating</p>
+                    </div>
+                    <div class="step" id="step-two">
+                        <p>J&J's one-shot vaccine is different in composition, with lower efficacy rating</p>
+                    </div>
+                </div>
+            </section>
+            <p>
+                Of its eight ingredients, Pfizer has four in common with Moderna's six. Both these vaccines are
+                mRNA
+                type,
+                meaning they are vaccines that teach our cells how to make a protein that will trigger an immune
+                response.
+                Johnson and Johnson vaccine, on the other hand, works by introducing a piece of modified virus
+                to help
+                the
+                body generate an immune response.
+            </p>
+            <p>
+                Disclaimer: This is a non-scientific study. All information used here has been sourced from
+                CDC's website.
+            </p>
+        </div>
+    </main>
+    <script src="https://unpkg.com/intersection-observer"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+        var scrolly = document.querySelector("#scrolly");
+        var article = scrolly.querySelector("article");
+
+        // initialize the scrollama
+        var scroller = scrollama();
+
+        // scrollama event handlers
+        function handleStepEnter(response) {
+            // response = { element, direction, index }
+            // add to color to current step
+            response.element.classList.add("is-active");
+        }
+
+        function handleStepExit(response) {
+            // response = { element, direction, index }
+            // remove color from current step
+            response.element.classList.remove("is-active");
+        }
+
+        function init() {
+            // 1. setup the scroller with the bare-bones options
+            // 		this will also initialize trigger observations
+            // 2. bind scrollama event handlers (this can be chained like below)
+            scroller
+                .setup({
+                    step: "#scrolly article .step",
+                    // debug: true,
+                    offset: 0.5
+                })
+                .onStepEnter(handleStepEnter)
+                .onStepExit(handleStepExit);
+
+            // 3. setup resize event
+            window.addEventListener("resize", scroller.resize);
+        }
+
+        // kick things off
+        init();
+    </script>
+    <script>
+        // using d3 for convenience
+        var main = document.querySelector("main");
+        var scrolly = main.querySelector("#scrolly-2");
+        var sticky = scrolly.querySelector(".sticky");
+        var article = scrolly.querySelector("article");
+        var steps = article.querySelectorAll(".step");
+
+        // initialize the scrollama
+        var scroller = scrollama();
+
+        // scrollama event handlers
+        function handleStepEnter(response) {
+            // response = { element, direction, index }
+            var el = response.element;
+
+            // remove is-active from all steps
+            // then add is-active to this step
+            steps.forEach(step => step.classList.remove('is-active'));
+            el.classList.add('is-active');
+
+            // update graphic based on step
+        }
+
+        function init() {
+            // 2. setup the scroller passing options
+            // 		this will also initialize trigger observations
+            // 3. bind scrollama event handlers (this can be chained like below)
+            scroller
+                .setup({
+                    step: "#scrolly-2 .scrolly-overlay .step",
+                    offset: 0.33,
+                    //   debug: true,
+                })
+                .onStepEnter(handleStepEnter);
+
+            // setup resize event
+            window.addEventListener("resize", scroller.resize);
+        }
+        // kick things off
+        init();
+    </script>
+
+</body>

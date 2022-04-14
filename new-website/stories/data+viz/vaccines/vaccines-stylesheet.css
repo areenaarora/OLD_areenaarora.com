@@ -1,0 +1,51 @@
+body {
+    background-color: rgba(255, 255, 255, 0.98);
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 125px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.dates{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.div-main {
+    text-align: left;
+    margin-left: 70px;
+    margin-right: 40px;
+    opacity:0.4;
+}
+
+.first-scroll {
+    text-align: left;
+    margin: auto;
+    padding-top:2vh;
+    padding-bottom:8vh;
+    padding-left:20vh;
+    padding-right:20vh;
+}
+
+.second-scroll {
+    text-align: left;
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+.third-scroll{
+    max-width: 1000px;
+    margin:0 auto;
+}

@@ -1,0 +1,56 @@
+.aboutme-div {
+  padding: 70px;
+  margin: 0;
+}
+
+.aboutme-buttons {
+  background-color: #000000;
+  border: none;
+  border-radius: 12px 12px 12px 12px;
+  color: rgb(255, 255, 255);
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: grab;
+  font-family: "Space Mono", monospace;
+}
+
+.responsive-img {
+  max-width: 25%;
+  width: auto;
+  height: auto;
+  /* float: right; */
+}
+
+.responsive-wrapper-aboutme {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Defining styles for smaller screens */
+
+@media (max-width: 768px) {
+  .responsive-wrapper {
+      flex-direction: column-reverse;
+  }
+  
+  body {
+      padding: 40px 20px 20px 20px;
+  }
+
+  .responsive-img {
+      max-width: 40%;
+      width: auto;
+  }
+
+  h1 {
+      font-size: 40px;
+  }
+
+  .right-nav {
+      position: relative;
+  }
+}

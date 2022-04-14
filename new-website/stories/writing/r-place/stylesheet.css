@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(254, 249, 238);
+    background-color: rgb(253, 253, 253);
     font-family: 'Karla', sans-serif;
     margin: 0
 }
@@ -35,4 +35,23 @@ figcaption {
     font-size: 12px;
     white-space: nowrap;
     text-align: center;
+}
+
+.div-figure {
+    align-items: center;
+    padding-right: -10px;
+    padding-left: 210px;
+}
+
+.final-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    object-fit: cover
+}
+
+.final-image img {
+    width: 80vw;
+    height: auto;
 }
