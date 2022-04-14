@@ -3,13 +3,6 @@
   gap: 50px;
 }
 
-.p-playground {
-  font-size: 18px;
-  font-weigh: bold;
-  text-align: left;
-  color: black;
-  background-size: contain;
-}
 .sticky-notes {
   display: flex;
   flex-direction: column;
