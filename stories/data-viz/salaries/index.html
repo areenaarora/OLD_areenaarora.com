@@ -22,6 +22,32 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/efe58d4158.js" crossorigin="anonymous"></script>
     <script defer data-domain="areenaarora.com" src="https://plausible.io/js/plausible.js"></script>
+    <!-- Defining rules for smaller screens -->
+    <style>
+        #g-top_three_agencies_svg-Mobile,
+        #g-top_three_agencies_svg-Tab,
+        #g-top_three_agencies_svg-Laptop {
+            display:none;
+        }
+
+        @media only screen and (max-width:320px) {
+            #g-top_three_agencies_svg-Mobile {
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width:321px) and (max-width:768px) {
+            #g-top_three_agencies_svg-Tab {
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width:769px) {
+            #g-top_three_agencies_svg-Laptop {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <title>city-salaries</title>
 
