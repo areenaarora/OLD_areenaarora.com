@@ -68,6 +68,17 @@ figcaption {
     text-shadow: 2px 4px #3a3a3a;
 }
 
+.bottom-left-text-salaries {
+    position: absolute;
+    color: aliceblue;
+    font-size: 85px;
+    text-align: left;
+    bottom: 80px;
+    left: 26px;
+    text-shadow: 2px 4px #000000;
+    /* margin-left: 40px; */
+}
+
 .main-title {
     position: absolute;
     color: aliceblue;
