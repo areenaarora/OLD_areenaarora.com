@@ -88,3 +88,18 @@ figcaption {
         top: 150px;
     }
 }
+
+.link-buttons {
+    background-color: #000000;
+    border: none;
+    border-radius: 12px 12px 12px 12px;
+    color: rgb(246, 255, 0);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: grab;
+    font-family: "Space Mono", monospace;
+  }
