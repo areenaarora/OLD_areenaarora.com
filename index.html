@@ -1,160 +1,142 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
 <html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./stylesheets/new-stylesheet.css">
+    <link rel="stylesheet" href="./stylesheets/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="sunflower.png">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Hubballi&family=Karla:ital,wght@1,300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/efe58d4158.js" crossorigin="anonymous"></script>
     <title>Areena Arora</title>
 </head>
+<nav>
+    <a href="https://areenaarora.com/aboutme">
+        <p>
+            <span style="font-weight:bolder; font-size: 28px;"> ABOUT </span>
+        </p>
+    </a>
+</nav>
 
 <body>
-    <nav>
-        <a href="https://areenaarora.com/aboutme">
-            <i class="fas fa-book fa-2x" aria-hidden="true"></i>
-            About Me
-        </a>
-        &nbsp;&nbsp;&nbsp;
-        <a href="https://areenaarora.com/playground">
-            <i class="fas fa-otter fa-2x"></i>
-            Playground
-        </a>
-        <a href='https://twitter.com/AreenaArora' target='blank' class="right-nav">
-            <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        &nbsp;&nbsp;
-        <a href='https://github.com/areenaarora' target='blank' class="right-nav">
-            <i class="fab fa-github fa-2x"></i>
-        </a>
-    </nav>
-    <h1>
-        Areena Arora
-    </h1>
-    <h2> Hi there! Thanks for being here. I'm working on updating this website and will be publishing an improved version soon. Stay tuned!</h2>
-    <h2>
-        Hi!
-        I'm a <span class="blinking">data journalist.</span> I'm: </h2>
-    <h3>
-        <ul><mark>Interested in</mark> covering climate crisis, environmental justice, infrastructure and policy and
-        </ul>
-        <ul><mark>Working on</mark> improving my visualization skills</ul>
-    </h3>
-    <br>
-    <h3>
-        Here's some of my work :)
-    </h3>
-    <br><br>
-    <div class="button-div">
-        <button>Data+Viz</button>
-    </div>
-    <br><br>
-    <div class="cards-wrapper">
-        <a href="stories/data-viz/discretionary-funds" target="_blank">
-            <div class="story-card">
-                <img src="./card-photos/money.jpg" alt="Money" style="width:100%">
-                <div class="story-card-container">
-                    <h3>Analyzing NYC city council's $371 million discretionary fund pool</h3>
-                    <h4>April 2022</h4>
-                </div>
+    <div class="center-content">
+        <h1>Hi! I'm Areena! 👩🏻‍💻</h1>
+        <div class="social-media-icons">
+            <i class="fa-brands fa-twitter fa-2x" style="color:#1DA1F2">
+                <a href="https://twitter.com/AreenaArora" target='blank'></a>
+            </i>
+            &nbsp; &nbsp; &nbsp;
+            <i class="fa-brands fa-linkedin-in fa-2x" style="color:#8E6BAB">
+                <a href="https://www.linkedin.com/in/areena-arora" target="_blank"></a>
+            </i>
+            &nbsp; &nbsp; &nbsp;
+            <i class="fa-brands fa-github fa-2x" style="color:#333">
+                <a href="https://github.com/areenaarora" target="_blank"></a>
+            </i>
+            &nbsp; &nbsp; &nbsp;
+            <i class="fa-solid fa-envelope-open-text fa-2x" style="color:rgb(206, 68, 68)">
+                <a href="mailt:areena.arora@columbia.edu" target="_blank"></a>
+            </i>
+        </div>
+        <h2> I'm a <span style="color: #ff715b">data journalist.</span> I'm: </h2>
+        <h3>
+            <ul><span style="background-color:#D3D3D3">~Interested in</span> covering climate crisis, environmental
+                justice and infrastructure.
+            </ul>
+            <ul><span style="background-color:#D3D3D3">~Working on</span> improving my visualization skills and writing
+                cleaner code.</ul>
+        </h3>
+        <br>
+        <h2>Here's some of my work</h2>
+        <div class="cards-wrapper">
+            <div class="each_card">
+                <a href="https://github.com/areenaarora/new-york-senate_scrape" target="_blank">
+                    <p class="card-headline">NEW YORK LAWS SCRAPED</p>
+                    <img src="./card-photos/new-york.jpg" alt="Grand Central Station in New York" style="width:100%">
+                    <p class="card-description">Is the focus on environment protection related laws? How have the laws
+                        enacted changed overtime?
+                    </p>
+                </a>
             </div>
-        </a>
-        <a href="stories/data-viz/vaccines" target="_blank">
-            <div class="story-card">
-                <img src="./card-photos/vaccine.jpg" alt="Vaccines" style="width:100%">
-                <div class="story-card-container">
-                    <h3>What do Pfizer, Moderna and J&J vaccines have in common?</h3>
-                    <h4>April 2022</h4>
-                </div>
+            <div class="each_card">
+                <a href="https://areenaarora.com/stories/data-viz/discretionary-funds/" target="_blank">
+                    <p class="card-headline">A CITY PROGRAM TO HELP IMMIGRANTS</p>
+                    <img src="./card-photos/dollars.jpg" alt="Money" style="width:100%; height:210px">
+                    <p class="card-description">New York City Family Unity Project is the country’s first public program
+                        for immigrants facing deportation, started in the city ...
+                    </p>
+                </a>
             </div>
-        </a>
-        <a href="stories/data-viz/style-guides" target="_blank">
-            <div class="story-card">
-                <img src="./card-photos/editor.jpg" alt="editor image" style="width:100%">
-                <div class="story-card-container">
-                    <h3>Comparing different newsrooms' style</h3>
-                    <h4>December 2021</h4>
-                </div>
+            <div class="each_card">
+                <a href="https://areenaarora.com/stories/data-viz/style-guides/" target="_blank">
+                    <p class="card-headline">COMPARING NEWSROOMS' STYLEGUIDES</p>
+                    <img src="./card-photos/typewriter.jpg" alt="Typewriter" style="width:100%">
+                    <p class="card-description">In May 2020, when George Floyd was murdered during an arrest in
+                        Minneapolis, it sparked
+                        nationwide
+                        protests and something changed in newsrooms ...
+                    </p>
+                </a>
             </div>
-        </a>
-        <a href='https://areena.substack.com/p/building-my-first-website-from-framework' target="_blank">
-            <div class="story-card">
-                <img src="./card-photos/idea.jpg" alt="idea" style="width:100%">
-                <div class="story-card-container">
-                    <h3>My digital playground — This website</h3>
-                    <h4>ongoing</h4>
-                </div>
+            <div class="each_card">
+                <a href="https://areenaarora.com/stories/data-viz/style-guides/" target="_blank">
+                    <p class="card-headline">NYC'S CLEAN ENERGY DEBATE</p>
+                    <img src="./card-photos/power-grid.jpg" alt="Power Grid" style="width:100%">
+                    <p class="card-description">As the city gears up to welcome two new renewable energy backed power
+                        plants, some activists worry about the long-term sustainability of these projects ...
+                    </p>
+                </a>
             </div>
-        </a>
-    </div>
-    <br><br><br>
-    <button>Reporting+Writing</button>
-    <br><br>
-    <div class="cards-wrapper">
-        <a href='stories/writing/street-flooding' target="_blank">
-            <div class="story-card">
-                <img src="./card-photos/street-flood.jpg" alt="Temple bells" style="width:100%">
-                <div class="story-card-container">
-                    <h3>Is NYC prepared to handle flash floods?</h3>
-                    <h4>April 2022</h4>
-                </div>
+            <div class="each_card">
+                <a href="https://areenaarora.com/stories/data-viz/style-guides/" target="_blank">
+                    <p class="card-headline">STREET FLOODING IN NYC</p>
+                    <img src="./card-photos/nyc-stree-flooding.jpg" alt="Street Flooding" style="width:100%">
+                    <p class="card-description">Between January 1, 2020, and March 31, 2022, New Yorkers lodged over
+                        67,000 street flooding-related complaints with the city government ...
+                    </p>
+                </a>
             </div>
-        </a>
-        <a href='stories/writing/r-place' target="_blank">
-            <div class="story-card">
-                <img src="./card-photos/final-rplace.png" alt="r/place artboard" style="width:100%">
-                <div class="story-card-container">
-                    <h3>Inside r/place</h3>
-                    <h4>April 2022</h4>
-                </div>
+            <div class="each_card">
+                <a href="https://www.idahopress.com/news/local/2cscoop/culvert-concerns-culvert-report-reveals-11-other-structures-in-deficient-condition/article_e1386f9b-49d1-518f-af3f-b20cad88bf62.html"
+                    target="_blank">
+                    <p class="card-headline">A PERSONAL ESSAY ON CLIMATE CRISIS</p>
+                    <img src="./card-photos/himalayas.jpg" alt="Snow covered mountains of Shimla, India"
+                        style="width:100%">
+                    <p class="card-description">My mom often complained though, in confusion more than dismay, about how
+                        many of her winter-favorite vegetables were now available almost all year long. There was
+                        nothing special to look forward to, she’d lament ...</p>
+                </a>
             </div>
-        </a>
-        <a href='stories/writing/uttarakhand-floods' target="_blank">
-            <div class="story-card">
-                <img src="./card-photos/uttarakhand.jpg" alt="Temple bells" style="width:100%">
-                <div class="story-card-container">
-                    <h3>Remembering 2013 Uttarakhand Floods</h3>
-                    <h4>March 2022</h4>
-                </div>
+            <div class="each_card">
+                <a href="https://areenaarora.com/stories/data-viz/vaccines" target="_blank">
+                    <p class="card-headline">COMPARING DIFFERENT COVID VACCINES</p>
+                    <img src="./card-photos/vaccines.jpg" alt="Vaccines" style="width:100%">
+                    <p class="card-description">On CDC’s website, the words explaining vaccine ingredients for both
+                        Pfizer and Moderna start with
+                        the same sentences ...</p>
+                </a>
             </div>
-        </a>
-        <a href='https://www.idahopress.com/news/local/2cscoop/indian-creek-plaza-over-budget-and-behind-original-construction-schedule/article_729c087a-780c-5202-bacf-34255edb016d.html'
-            target="_blank">
-            <div class="story-card">
-                <img src="./card-photos/construction.jpg" alt="construction" style="width:100%">
-                <div class="story-card-container">
-                    <h3>Indian Creek Plaza — over budget and behind original construction schedule</h3>
-                    <h4>October 2017</h4>
-                </div>
+            <div class="each_card">
+                <a href="https://apnews.com/article/10ab9cb7a5e24bdd86337d36a48c539b" target="_blank">
+                    <p class="card-headline">RISE IN RV LIVING</p>
+                    <img src="./card-photos/rv-life.jpg" alt="A parked RV" style="width:100%">
+                    <p class="card-description">Living in an RV park also gives its residents freedom to move around ...
+                    </p>
+                </a>
             </div>
-        </a>
-        <a href='https://www.idahopress.com/news/local/2cscoop/culvert-concerns-culvert-report-reveals-11-other-structures-in-deficient-condition/article_e1386f9b-49d1-518f-af3f-b20cad88bf62.html'
-            target="_blank">
-            <div class="story-card">
-                <img src="./card-photos/culvert.jpg" alt="Culvert" style="width:100%">
-                <div class="story-card-container">
-                    <h3>Culvert concerns: Culvert report reveals 11 other structures in deficient condition</h3>
-                    <h4>December 2017</h4>
-                </div>
+            <div class="each_card">
+                <a href="https://www.idahopress.com/news/local/2cscoop/culvert-concerns-culvert-report-reveals-11-other-structures-in-deficient-condition/article_e1386f9b-49d1-518f-af3f-b20cad88bf62.html"
+                    target="_blank">
+                    <p class="card-headline">INVESTIGATING CULVERT INSPECTIONS</p>
+                    <img src="./card-photos/culvert.jpg" alt="Culvert" style="width:100%">
+                    <p class="card-description">Nearly a month after a culvert collapsed, flooding 21 houses, the
+                        highway district received a
+                        report detailing that it had been deemed critical in 2013 ...</p>
+                </a>
             </div>
-        </a>
-        <a href='https://apnews.com/article/10ab9cb7a5e24bdd86337d36a48c539b' target="_blank">
-            <div class="story-card">
-                <img src="./card-photos/RV.jpg" alt="RV" style="width:100%">
-                <div class="story-card-container">
-                    <h3>As housing inventory shrinks, people look to living in RVs</h3>
-                    <h4>April 2018</h4>
-                </div>
-            </div>
-        </a>
+        </div>
     </div>
 </body>
