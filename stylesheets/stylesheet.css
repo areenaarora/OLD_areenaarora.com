@@ -1,7 +1,7 @@
 body {
     background-color: #fcf8eb;
     font-family: 'Playfair Display', serif;
-    padding: 40px 120px 100px 120px;
+    padding: 40px 25px 100px 25px;
     margin: 0 auto;
 }
 
@@ -23,10 +23,8 @@ nav a:hover {
 }
 
 .center-content {
-    margin-top: 100px;
-    margin-left: 80px;
-    margin-right: 80px;
-    text-align: left;
+    max-width: 1050px;
+    margin: 0 auto;
 }
 
 .social-media-icons {
@@ -41,7 +39,14 @@ nav a:hover {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    align-items: left;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 400px) {
+    .cards-wrapper{
+        flex-direction: column;
+        align-content: center;
+    }
 }
 
 .each-card {
@@ -127,3 +132,6 @@ a:hover {
     font-family: monospace;
     color: #ea624e;
 }
+
+/* RESPONSIVENESS RULES */
+@media only screen and (max-width: 400px) {}
