@@ -45,7 +45,8 @@ nav a:hover {
 }
 
 .each-card {
-    width: 300px;
+    /* flex-basis: 30%; */
+    width: 320px;
 }
 
 /* Fonts */
