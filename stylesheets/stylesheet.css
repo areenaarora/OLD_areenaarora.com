@@ -128,31 +128,3 @@ a:hover {
     font-family: monospace;
     color: #ea624e;
 }
-
-/* Defining styles for smaller screens */
-
-@media (min-width: 1250px) {
-    .responsive-wrapper {
-        flex-direction: column-reverse;
-    }
-
-    body {
-        padding: 40px 20px 20px 20px;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    .right-nav {
-        position: relative;
-    }
-}
