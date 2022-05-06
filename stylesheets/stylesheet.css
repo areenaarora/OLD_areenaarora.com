@@ -19,7 +19,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff715b;
+    color: #ea624e;
 }
 
 .center-content {
@@ -80,7 +80,7 @@ a p {
 }
 
 a p:hover {
-    color: #ff715b;
+    color: #ea624e;
 }
 
 a {
@@ -90,7 +90,7 @@ a {
 }
 
 a:hover {
-    color: #ff715b;
+    color: #ea624e;
 }
 
 .card-headline {
@@ -104,12 +104,12 @@ a:hover {
 }
 
 .highlighted-words {
-    color: #ff715b;
+    color: #ea624e;
 }
 
 .highlighted-words a{
     text-decoration: none;
-    color: #ff715b;
+    color: #ea624e;
 }
 
 .highlighted-words a:hover{
@@ -126,5 +126,5 @@ a:hover {
 .code-block a:hover{
     font-size:22px;
     font-family: monospace;
-    color: #ff715b;
+    color: #ea624e;
 }
