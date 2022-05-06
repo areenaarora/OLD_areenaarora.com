@@ -107,39 +107,39 @@ a:hover {
     color: #ea624e;
 }
 
-.highlighted-words a{
+.highlighted-words a {
     text-decoration: none;
     color: #ea624e;
 }
 
-.highlighted-words a:hover{
+.highlighted-words a:hover {
     background-color: #D3D3D3;
 }
 
-.code-block a{
-    font-size:18px;
+.code-block a {
+    font-size: 18px;
     font-weight: lighter;
     font-family: monospace;
     background-color: #D3D3D3;
 }
 
-.code-block a:hover{
-    font-size:22px;
+.code-block a:hover {
+    font-size: 22px;
     font-family: monospace;
     color: #ea624e;
 }
 
 /* Defining styles for smaller screens */
-  
-@media (max-width: 768px) {
+
+@media (min-width: 1250px) {
     .responsive-wrapper {
         flex-direction: column-reverse;
     }
-    
+
     body {
         padding: 40px 20px 20px 20px;
     }
-  
+
     h1 {
         font-size: 30px;
     }
@@ -151,8 +151,8 @@ a:hover {
     h3 {
         font-size: 18px;
     }
- 
+
     .right-nav {
         position: relative;
     }
-  }
+}
