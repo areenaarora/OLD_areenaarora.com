@@ -19,39 +19,15 @@
   }
   
   .responsive-img {
-      width: 120;
-      height: 100;
       float: right;
       margin-left: 40px;
       margin-bottom: 20px;
   }
   
-  .responsive-wrapper-aboutme {
-    display: flex;
-    align-items: flex-start;
-  }
-  
   /* Defining styles for smaller screens */
   
-  @media (max-width: 768px) {
-    .responsive-wrapper {
-        flex-direction: column-reverse;
-    }
-    
-    body {
-        padding: 40px 20px 20px 20px;
-    }
-  
+  @media (min-width: 400px) {
     .responsive-img {
         max-width: 40%;
-        width: auto;
-    }
-  
-    h1 {
-        font-size: 40px;
-    }
- 
-    .right-nav {
-        position: relative;
     }
   }
