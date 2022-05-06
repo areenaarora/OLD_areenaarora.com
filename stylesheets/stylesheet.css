@@ -32,7 +32,6 @@ nav a:hover {
 .social-media-icons {
     padding-right: 150px;
     color: #343434;
-    /* display: table; */
     width: auto;
     margin: auto;
     align-items: center;
@@ -45,8 +44,8 @@ nav a:hover {
     align-items: left;
 }
 
-.each_card {
-    width: 320px;
+.each-card {
+    width: 220px;
 }
 
 /* Fonts */
