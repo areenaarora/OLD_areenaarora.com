@@ -38,6 +38,14 @@ body {
     p {
         font-size: 22px;
     }
+
+    .img-1 {
+        max-width: 25%;
+    }
+
+    .img-2 {
+        max-width: 25%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -56,6 +64,14 @@ body {
     p {
         font-size: 16px;
     }
+
+    .img-1 {
+        max-width: 25%;
+    }
+
+    .img-2 {
+        max-width: 25%;
+    }
 }
 
 @media (max-width: 550px) {
@@ -73,5 +89,13 @@ body {
 
     p {
         font-size: 20px;
+    }
+
+    .img-1 {
+        max-width: 25%;
+    }
+
+    .img-2 {
+        max-width: 25%;
     }
 }
