@@ -4,7 +4,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     background: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body.switched {
@@ -67,7 +67,7 @@ h2 {
   Enables <iframe> support work on itch.io when using mobile iOS
 */
 .outerContainer {
-    position: absolute;
+    /* position: absolute; */
     display: block;
     margin: 0;
     padding: 0;
