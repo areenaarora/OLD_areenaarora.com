@@ -21,6 +21,11 @@ nav a:hover {
     color: #ea624e;
 }
 
+.center-content-index {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
 .center-content {
     max-width: 850px;
     margin: 0 auto;
