@@ -32,8 +32,8 @@ h2 {
 }
 
 .header {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /*
@@ -56,8 +56,8 @@ h2 {
     background: #fcf8eb;
     transition: color 0.6s, background 0.6s;
     margin: 0;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     height: 14px;
     top: 0;
 }
@@ -76,14 +76,14 @@ h2 {
     width: 100%;
     top: 0;
     left: 0;
-    margin-top: 24px;
+    margin-top: 1px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 980px) {
     .outerContainer {
-        margin-top: 44px;
+        margin-top: 40px;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -93,9 +93,10 @@ h2 {
     display: block;
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
-    padding-top: 4em;
-    background: #fcf8eb;
+    padding: 35px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: #EFDCF7;
 }
 
 .switched .container {
@@ -182,7 +183,7 @@ img {
 }
 
 #controls {
-    z-index: 4;
+    z-index: 10;
     font-size: 9pt;
     text-align: center;
     padding-bottom: 6px;
