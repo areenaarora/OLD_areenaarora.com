@@ -3,7 +3,7 @@
 #### This website's been through MANY redesigns and here we finally are!
 I started with using a CSS framework called [Bulma](https://bulma.io/) for design. Then, I decided to write my own CSS and after a couple of versions, settled on the current design.
 
-#### Thanks to!
+#### Thanks to —
 The website was made possible all thanks to:
 - [Bulma](https://bulma.io/) for the initial CSS framework
 - [Unsplash](https://unsplash.com/) for most of the pictures used
