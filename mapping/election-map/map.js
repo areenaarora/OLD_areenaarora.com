@@ -195,6 +195,8 @@ map.on("mouseleave", "us_counties_elections", function () {
   map.getCanvas().style.cursor = "";
 });
 
+// Graduated map //
+
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYXJlZW5hLWFyb3JhIiwiYSI6ImNsM3U4bXk5NzI5bGIzZ211MmJmMzNpOWkifQ.vVgiB_-ozFDEiI9ERgrq2w";
 var mapNew = new mapboxgl.Map({
