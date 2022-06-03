@@ -45,7 +45,7 @@ map.on("load", function () {
           "match",
           ["get", "Winner"],
           "Donald J Trump",
-          "#cf635d",
+          "#ec1408",
           "Joseph R Biden Jr",
           "#6193c7",
           "Other",
