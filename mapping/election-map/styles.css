@@ -15,6 +15,13 @@ body {
     margin: 2em auto;
 }
 
+.center-content-maps {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+}
+
 .mapboxgl-popup-content h4 {
     font-weight: 300;
     font-size: 0.9em;
@@ -24,11 +31,13 @@ body {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+
 .mapboxgl-popup-content h2 {
     font-weight: 500;
     margin-top: 0.5em;
     margin-bottom: 0.3em;
 }
+
 .mapboxgl-popup-content p {
     font-weight: 300;
     margin-top: 0.3em;
