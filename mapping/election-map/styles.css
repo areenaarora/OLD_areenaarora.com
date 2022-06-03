@@ -17,7 +17,8 @@ body {
 
 .center-content-maps {
     max-width: 1450px;
-    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: 50px;
 }
 
 }
