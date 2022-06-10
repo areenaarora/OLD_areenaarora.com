@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: 80%;
+    height: 600px;
+    margin: 5em auto;
+}
+
+#mapNew {
+    width: 50%;
+    height: 500px;
+    margin: 5em auto;
+}
+
+#title {
+    background-color: #fff;
+    opacity: 70%;
+    border-radius: 1em;
+    top: 5em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font: .8em/.9em 'Open Sans', sans-serif;
+    line-height: 2.5em;
+    padding: 1em 2em 0em;
+    position: absolute;
+    max-width: 25%;
+    margin: 0em 5em;
+    z-index: 100;
+}
+
+#title h1 {
+    opacity: 100%;
+}
+
+#title p {
+    line-height: 1.5em;
+    opacity: 100%;
+}
+
+#title div span {
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-left: 5px;
+    width: 10px;
+}
+
+#title hr {
+    border-top: .2em dashed #404040;
+    border-bottom: 0em;
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
+#economic-legend {
+    font: 1em/1.5em 'Open Sans', sans-serif;
+    padding: 1em 1em 1em 1em;
+    position: relative;
+    right: 10px;
+    z-index: 100;
+    opacity: 100%
+}
+
+#economic-legend h4 {
+    margin: 0 0 0px;
+    opacity: 100%
+}
+
+#economic-legend p {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+#economic-legend div span {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: auto;
+    display: inline-block;
+    height: 5px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 5px;
+    opacity: 100%
+}

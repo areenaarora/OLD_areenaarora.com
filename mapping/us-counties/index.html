@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="styles.css">
+    <title>Counties Map</title>
+</head>
+
+<body>
+    <div id='map'>
+        <div id='title'>
+            <h1>Manufacturing and farming are the most common industries among counties with specialized economic types
+            </h1>
+            <p>Data shown here comes from the <a
+                    href='https://www.ers.usda.gov/data-products/county-typology-codes.aspx'>U.S. Department of
+                    Agriculture's Economic Research Service</a>. Each county is assigned a primary industry dependence,
+                visualized here. This data was published in 2015.</p>
+            <hr>
+            <div id="economic-legend">
+                <h4>County Economic Type</h4>
+                <p><em>Click on each county for detailed economic information</em></p>
+
+                <div><span style="background-color: #b3e2cd"></span>Farming</div>
+                <div><span style="background-color: #f4cae4"></span>Federal/State Government</div>
+                <div><span style="background-color: #cbd5e8"></span>Recreation</div>
+                <div><span style="background-color: #fff2ae"></span>Mining</div>
+                <div><span style="background-color: #e6f5c9"></span>Nonspecialized</div>
+            </div>
+        </div>
+    </div>

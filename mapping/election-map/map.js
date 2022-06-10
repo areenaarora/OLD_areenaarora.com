@@ -10,12 +10,6 @@ var map = new mapboxgl.Map({
 });
 
 map.on("load", function () {
-  // This is the function that finds the first symbol layer
-  // let layers = map.getStyle().layers;
-  // for (var i = 0; i < layers.length; i++) {
-  //     console.log(layers[i].id);
-  // }
-
   map.addLayer(
     {
       id: "us_states_elections_outline",
