@@ -16,7 +16,7 @@ map.on("load", function () {
       type: "line",
       source: {
         type: "geojson",
-        data: "/data/map_typology.geojson",
+        data: "./data/map_typology.geojson",
       },
       paint: {
         "line-color": "#fff",
@@ -34,7 +34,7 @@ map.on("load", function () {
       type: "line",
       source: {
         type: "geojson",
-        data: "/data/map_typology.geojson",
+        data: "./data/map_typology.geojson",
       },
       paint: {
         "line-color": "#fff",
@@ -50,7 +50,7 @@ map.on("load", function () {
       type: "fill",
       source: {
         type: "geojson",
-        data: "/data/map_typology.geojson",
+        data: "./data/map_typology.geojson",
       },
       paint: {
         "fill-color": [
