@@ -17,27 +17,28 @@
 </head>
 
 <body>
-    <div id='map'>
-        <div id='title'>
-            <h1>Manufacturing and farming are the most common dominant industries in US counties
-            </h1>
-            <p>Data source: <a href='https://www.ers.usda.gov/data-products/county-typology-codes.aspx'>U.S. Department
-                    of
-                    Agriculture's Economic Research Service</a>. Each county is assigned a primary industry,
-                visualized here. The data was published in 2015.</p>
-            <hr>
-            <div id="economic-legend">
-                <h4>Click on each county for more details!</h4>
-
-                <div><span style="background-color: #b3e2cd"></span>Farming</div>
-                <div><span style="background-color: #f4cae4"></span>Federal/State Government</div>
-                <div><span style="background-color: #cbd5e8"></span>Recreation</div>
-                <div><span style="background-color: #fff2ae"></span>Mining</div>
-                <div><span style="background-color: #e6f5c9"></span>Nonspecialized</div>
-            </div>
+    <div class="center-content">
+        <h1>Manufacturing and farming dominate US counties</h1>
+        <p>This map visualizes the dominant economic activity of each county in the US, according to data from the US Department of Agriculture's Economic Research Service.</p>
+        <p>Note the data here was published in 2015.</p>
         </div>
-        <script type='text/javascript' src="map.js"></script>
-    </div>
+        <div id='map'>
+            <div id='legend-container'>
+                <div id="economic-legend">
+                    <div><span style="background-color: #b3e2cd"></span>Farming</div>
+                    <div><span style="background-color: #f4cae4"></span>Federal/State Government</div>
+                    <div><span style="background-color: #cbd5e8"></span>Recreation</div>
+                    <div><span style="background-color: #fff2ae"></span>Mining</div>
+                    <div><span style="background-color: #e6f5c9"></span>Nonspecialized</div>
+                </div>
+            </div>
+            <script type='text/javascript' src="map.js"></script>
+        </div>
+        <div class="center-content">
+            <h2>The process</h2>
+            <p>This map is based on the same logic as my <a href="https://areenaarora.com/mapping/election-map/" target="_blank">previous one where I mapped election data</a></p>
+            <p>The base map is the same template, created on Mapbox GL, which is a free web-mapping service. As in any mapping, you take the base layer and add layers on top of it. For the layers here, I used data from the US Department of Agriculture. The data was analyzed with Python using a Google Colab notebook. For the analyses bit, I'd initially clubbed counties by state</p>
+        </div>
 </body>
 
 </html>

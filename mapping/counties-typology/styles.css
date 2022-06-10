@@ -15,7 +15,7 @@ body {
     margin: 5em auto;
 }
 
-#title {
+#legend-container {
     background-color: #fff;
 	opacity: 70%;
 	border-radius: 1em;
@@ -31,28 +31,17 @@ body {
 	z-index: 100;
 }
 
-#title h1 {
-    opacity: 100%;
-}
-
-#title p {
+#legend-container p {
     line-height: 1.5em;
     opacity: 100%;
 }
 
-#title div span {
+#legend-container div span {
     border-radius: 50%;
     display: inline-block;
     height: 10px;
     margin-left: 5px;
     width: 10px;
-}
-
-#title hr {
-    border-top: .2em dashed #404040;
-    border-bottom: 0em;
-    margin-top: .75em;
-    margin-bottom: .75em;
 }
 
 #economic-legend {
