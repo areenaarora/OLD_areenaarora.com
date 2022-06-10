@@ -17,17 +17,18 @@ body {
 
 #title {
     background-color: #fff;
-    opacity: 70%;
-    border-radius: 1em;
-    top: 5em;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    font: .8em/.9em 'Open Sans', sans-serif;
-    line-height: 2.5em;
-    padding: 1em 2em 0em;
-    position: absolute;
-    max-width: 25%;
-    margin: 0em 5em;
-    z-index: 100;
+	opacity: 70%;
+	border-radius: 1em;
+	bottom: 50px;
+    right: 0px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	font: .8em/.9em 'Open Sans', sans-serif;
+	line-height: 2.5em;
+	padding: 1em 2em 0em;
+	position: absolute;
+	max-width: 25%;
+	margin: 0em 0em;
+	z-index: 100;
 }
 
 #title h1 {
