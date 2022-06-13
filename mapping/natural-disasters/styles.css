@@ -49,7 +49,7 @@ body {
     border-radius: 50%;
     border-style: solid;
     border-color: black;
-    border-width: 1px;
+    border-width: 0px;
     margin: auto;
     display: inline-block;
     height: 16px;
