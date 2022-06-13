@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mapbox-improve-map {
+    display: none;
+}
+
+
+#map {
+    width: 50%;
+    height: 700px;
+    margin: 5em auto;
+}
+
+#menu {
+    position: absolute;
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 180px;
+}
+
+#worldview-options {
+    margin-top: 10px;
+}
+
+.legend2 {
+    font: 1em/1.5em 'Open Sans', sans-serif;
+    padding: 1em 1em 1em 1em;
+    position: relative;
+    right: 10px;
+    z-index: 100;
+    opacity: 100%
+}
+
+.legend2 h4 {
+    margin: 0 0 0px;
+    opacity: 100%
+}
+
+.legend2 p {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.legend2 div span {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: auto;
+    display: inline-block;
+    height: 5px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 5px;
+    opacity: 100%
+}
