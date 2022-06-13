@@ -2,7 +2,7 @@ mapboxgl.accessToken =
   "pk.eyJ1IjoiYXJlZW5hLWFyb3JhIiwiYSI6ImNsM3U4bXk5NzI5bGIzZ211MmJmMzNpOWkifQ.vVgiB_-ozFDEiI9ERgrq2w";
 var map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/areena-arora/cl44y9p4r000g14rw0lv2rigo",
+  style: "mapbox://styles/mapbox/light-v10",
   zoom: 3.5,
   center: [81.6, 23.5],
   maxZoom: 15,
@@ -10,7 +10,37 @@ var map = new mapboxgl.Map({
 });
 
 map.on("load", function () {
-    map.addLayer({
+  filterLayers("IN");
+  function filterLayers(worldview) {
+    // The "admin-0-boundary-disputed" layer shows boundaries
+    // at this level that are known to be disputed.
+    map.setFilter("admin-0-boundary-disputed", [
+      "all",
+      ["==", ["get", "disputed"], "true"],
+      ["==", ["get", "admin_level"], 0],
+      ["==", ["get", "maritime"], "false"],
+      ["match", ["get", "worldview"], ["all", worldview], true, false],
+    ]);
+    // The "admin-0-boundary" layer shows all boundaries at
+    // this level that are not disputed.
+    map.setFilter("admin-0-boundary", [
+      "all",
+      ["==", ["get", "admin_level"], 0],
+      ["==", ["get", "disputed"], "false"],
+      ["==", ["get", "maritime"], "false"],
+      ["match", ["get", "worldview"], ["all", worldview], true, false],
+    ]);
+    // The "admin-0-boundary-bg" layer helps features in both
+    // "admin-0-boundary" and "admin-0-boundary-disputed" stand
+    // out visually.
+    map.setFilter("admin-0-boundary-bg", [
+      "all",
+      ["==", ["get", "admin_level"], 0],
+      ["==", ["get", "maritime"], "false"],
+      ["match", ["get", "worldview"], ["all", worldview], true, false],
+    ]);
+  }
+  map.addLayer({
     id: "each_disaster",
     type: "circle",
     source: {
