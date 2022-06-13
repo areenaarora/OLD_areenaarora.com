@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.maps-container {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+#map2020 {
+    width: 39%;
+    height: 650px;
+    margin-left: 80px;
+}
+
+#map2021 {
+    width: 39%;
+    height: 650px;
+    margin-right: 80px;
+}
+
+#stops2020 {
+    width: 39%;
+    height: 650px;
+    margin-left: 80px;
+}
+
+#stops2021 {
+    width: 39%;
+    height: 650px;
+    margin-right: 80px;
+}
+
+.mapboxgl-popup-content h4 {
+    font-weight: 500;
+    font-size: 0.9em;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgb(80, 80, 80);
+    margin-top: 0.1em;
+    margin-bottom: 0em;
+}
+
+.mapboxgl-popup-content p {
+    font-weight: 500;
+    margin-top: 0.3em;
+    margin-bottom: 0em;
+}

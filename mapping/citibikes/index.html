@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Citi Bike map</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../../stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="icon" type="image/x-icon" href="../../favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/efe58d4158.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="center-content">
+        <h1>Mapping Citibike trips data</h1>
+        <p>For this next assignment, I worked with Citi Bike's trips dataset, accessed on June 10, 2022. For consistency
+            sake, my classmates and I were all assigned data from September 2020 and September 2021 to work with.</p>
+        <p>The analyses wasn't much, but was done using various Python libraries — Pandas, Numpy, Altair and Geopandas —
+            on a Google Colab notebook.</p>
+        <p>The total number of trips in September 2020 was about 2.4 million. In the same month a year later, that
+            number went up to 3.2 million.</p>
+        <p>These first two maps show the number of trip starts for each Citi Bike. All four maps are interactive,
+            meaning you can zoom in and out of them. The map on the left shows data from Sept 2020, and the second one
+            is for Sept 2021. The median number of trip starts was 1457 in 2020 and 1133 in 2021.</p>
+        </p>
+    </div>
+    <div class="maps-container">
+        <div id='map2020'></div>
+        <div id='map2021'></div>
+    </div>
+    <div class="center-content">
+        <p>These next two maps show stations where trips ended, for the same two months. Like the previous two maps,
+            these too, are interactive!</p>
+    </div>
+    <br>
+    <div class="maps-container">
+        <div id='stops2020'></div>
+        <div id='stops2021'></div>
+    </div>
+    <div class="center-content">
+        <p>In both 2020 and 2021, W 21 St & 6 Ave was the station with the most activity — in terms of both the number
+            of trip starts and stops.</p>
+    </div>
+    <script type='text/javascript' src="map.js"></script>
+</body>
+
+</html>
