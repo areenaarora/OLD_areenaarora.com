@@ -38,6 +38,7 @@ map.on("load", function () {
         "#C16D47",
         "#ffffff",
       ],
+      "circle-opacity": 0.8,
       "circle-stroke-width": 0,
       "circle-stroke-color": "#ffffff",
     },
@@ -59,9 +60,9 @@ map.on("load", function () {
           ", " +
           stateName +
           "</h4>" +
-          "<h2>" +
+          "<p>" +
           disasterType +
-          "</h2>" +
+          "</p>" +
           "<p>" +
           year +
           "</p>"
