@@ -15,7 +15,7 @@ map.on("load", function () {
     type: "circle",
     source: {
       type: "geojson",
-      data: "/data/india-disasters.geojson",
+      data: "data/india-disasters.geojson",
     },
     paint: {
       "circle-radius": ["*", ["sqrt", ["get", "total"]], 12],
