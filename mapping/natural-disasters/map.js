@@ -68,7 +68,7 @@ map.on("load", function () {
         "#C16D47",
         "#ffffff",
       ],
-      "circle-opacity": 0.9,
+      "circle-opacity": 0.8,
       "circle-stroke-width": 0,
       "circle-stroke-color": "#ffffff",
     },
