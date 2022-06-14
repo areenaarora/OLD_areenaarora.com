@@ -12,14 +12,11 @@ p {
     font-weight: 400;
 }
 
-a {
-    font-weight: 400;
-}
-
 .card-headline {
     font-weight: 800;
 }
 
 a {
-    color:#ea624e;
+    color:#010101;
+    font-weight: 400;
 }
