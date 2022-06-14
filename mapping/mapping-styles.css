@@ -1,25 +1,21 @@
 body {
     /* background-image: linear-gradient(to right bottom, #079242, #00aa78, #00c0aa, #2cd5d7, #6fe8fc); */
     background-color:#ffffff;
-    font-family:'Courier New', Courier, monospace'
+    font-family:'Roboto Mono', monospace;
 }
 
 h1 {
-    color: black;
+    font-weight: 600;
 }
 
 p {
-    color: black;
+    font-weight: 400;
 }
 
 a {
-    color: black;
+    font-weight: 400;
 }
 
 .card-headline {
-    color: black;
-}
-
-.card-description {
-    color: black;
+    font-weight: 600;
 }
