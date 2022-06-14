@@ -47,11 +47,11 @@
                 href="https://sedac.ciesin.columbia.edu/data/set/pend-gdis-1960-2018/data-download"
                 target="_blank"><span style="color:#ea624e;">NASA's Socioeconomic Data and Applications
                     Center</span></a></p>
-
-        <div id="disaster-legend" class="legend2">
-            <h4>Natural Disasters by Type</h4>
-            <p><em>Click on each dot for the date and location of each natural disaster</em></p>
-            <div><span style="background-color: #59c3c3"></span>Storm</div>
+    </div>
+    <div id="map">
+        <div class="test-legend">
+            <h3>Disaster types</h3>
+            <div><span style="background-color: #59c3c3;"></span>Storm</div>
             <div><span style="background-color: #4062bb"></span>Flood</div>
             <div><span style="background-color: #F12323"></span>Extreme Temperature</div>
             <div><span style="background-color: #FCC772"></span>Drought</div>
@@ -59,13 +59,31 @@
             <div><span style="background-color: #ebebeb"></span>Landslide</div>
         </div>
     </div>
-    <div id="map"></div>
     <div class="center-content">
-        <p>I have no way of knowing how complete this dataset is— especially for Arunachal Pradesh and Jammu and Kashmir. For my analyses, I used a global dataset and sliced it
-            just to keep natural disasters specific to India. At a glance, floods are the most common disaster, followed by droughts, which is consistent with common knowledge.</p>
-            <p>The dataset includes natural disasters from 1960 to 2018. For future mapping assignments, for a dataset like this, I'd like to be able to show the magnitude of destruction from these disasters too.</p>
-            <h2><span style="color:#ea624e; align-items: center;">Challenge</span></h2>
-
+        <p>I have no way of knowing how complete this dataset is— especially for Arunachal Pradesh and Jammu and
+            Kashmir. For my analyses, I used a global dataset and sliced it
+            just to keep natural disasters specific to India. At a glance, floods are the most common disaster, followed
+            by droughts, which is consistent with common knowledge.</p>
+        <p>The dataset includes natural disasters from 1960 to 2018. For future mapping assignments, for a dataset like
+            this, I'd like to be able to show the magnitude of destruction from these disasters too.</p>
+        <h3><span style="color:#ea624e">Challenge</span></h3>
+        <p>The biggest challenge with this map was ensuring I'm able to show all Indian states. Mapbox by default
+            doesn't show disputed territory. Or, rather, shows them from a US-viewpoint. For India, that means that the
+            state of Jammu and Kashmir and Arunachal Pradesh aren't fully shown within India's borders. <a
+                href="https://www.washingtonpost.com/technology/2020/02/14/google-maps-political-borders/"
+                target="_blank">Google does something similar</a> — showing different borders on its maps to users from
+            different regions.</p>
+        <p>I didn't want that. I wanted to create a map that's the same for users from everywhere — showing both
+            Arunachal Pradesh and Jammu and Kashmir as part of India.</p>
+        <p>To do so, I used the example code provided in <a
+                href="https://docs.mapbox.com/mapbox-gl-js/example/toggle-worldviews/" target="_blank">Mapbox's
+                documentation.</a></p>
+        <p>The example code creates a menu of sorts with options to select worldviews from its pre-configured set of
+            options — from India, US, China and Japan. Here's what that looks like:</p>
+            <video width="750" height="400" autoplay="true">
+                <source src="video.mp4" type="video/mp4"></video>
+                <p>Notice how the boundary around Arunachal Pradesh changes dynamically. Mapbox's example code makes US the default worldview when a user lands on the page. I configured mine to make it India's and then removed the option to toggle.</p>
+                <p>The other slight stylistic challenge was— This feature, to toggle worldviews isn't available on all Mapbox styles. So, after much trial and error, I gave in and used the style that was used in their example.</p>
     </div>
     <script type='text/javascript' src="map.js"></script>
 </body>

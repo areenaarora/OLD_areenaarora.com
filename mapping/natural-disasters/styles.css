@@ -26,26 +26,45 @@ body {
     margin-top: 10px;
 }
 
-.legend2 {
-    font: 1em/1.5em 'Open Sans', sans-serif;
+.test-legend{
+    background-color: rgb(253, 241, 175);
+	opacity: 100%;
+	border-radius: 1em;
+	top: 5em;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	font: .8em/.9em 'Open Sans', sans-serif;
+	line-height: 2em;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	max-width: 24%;
+	margin: 0em 2em;
+	z-index: 100;
+}
+
+/* .test-legend {
     padding: 1em 1em 1em 1em;
     position: relative;
     right: 10px;
     z-index: 100;
-    opacity: 100%
+    opacity: 100% */
+
+
+.test-legend p {
+    color:black;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    right: 10px;
 }
 
-.legend2 h4 {
-    margin: 0 0 0px;
-    opacity: 100%
-}
-
-.legend2 p {
+.test-legend h3 {
     padding-top: 0px;
     margin-top: 0px;
+    color:black;
+    font-size: 20px;
 }
 
-.legend2 div span {
+.test-legend div span {
     border-radius: 50%;
     border-style: solid;
     border-color: black;

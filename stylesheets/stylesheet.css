@@ -79,7 +79,7 @@ p {
 }
 
 a p {
-    color: #343434;
+    color: #ea624e;
     font-size: 16px;
     text-decoration: none;
 }
@@ -90,7 +90,7 @@ a p:hover {
 
 a {
     text-decoration: none;
-    color: #343434;
+    color: #ea624e;
     font-size: 18px;
 }
 
@@ -113,7 +113,7 @@ a:hover {
 }
 
 .highlighted-words a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #ea624e;
 }
 
