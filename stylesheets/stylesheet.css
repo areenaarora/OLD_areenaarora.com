@@ -14,7 +14,7 @@ nav {
 
 nav a {
     color: #343434;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 nav a:hover {
