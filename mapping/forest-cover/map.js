@@ -1,7 +1,7 @@
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYXJlZW5hLWFyb3JhIiwiYSI6ImNsM3U4bXk5NzI5bGIzZ211MmJmMzNpOWkifQ.vVgiB_-ozFDEiI9ERgrq2w";
 
-var map = new mapboxgl.Map({
+var map_1990 = new mapboxgl.Map({
   container: "map-1990",
   style: "mapbox://styles/areena-arora/cl3ugxu1u003614jzkj9maigu",
   projection: "naturalEarth",
@@ -10,13 +10,13 @@ var map = new mapboxgl.Map({
   minZoom: 0.2,
   center: [0, 0],
 });
-map.on("load", function () {
-  map.addLayer({
+map_1990.on("load", function () {
+  map_1990.addLayer({
     id: "forest-data-1990",
     type: "fill",
     source: {
       type: "geojson",
-      data: "/data/countriesClimate.geojson",
+      data: "data/countriesClimate.geojson",
     },
     paint: {
       "fill-color": [
@@ -53,7 +53,7 @@ map.on("load", function () {
   });
 });
 // Popup
-map.on("click", "map", function (e) {
+map_1990.on("click", "map-1990", function (e) {
   let country_name = e.features[0].properties["Country Name"];
   let pct_1990 = e.features[0].properties["RATING_1990"];
   new mapboxgl.Popup()
@@ -68,16 +68,17 @@ map.on("click", "map", function (e) {
         " percentage of land area covered by forest" +
         "</p>"
     )
-    .addTo(map);
+    .addTo(map_1990);
 });
 // Change the cursor to a pointer when the mouse is over the turnstileData layer.
-map.on("mouseenter", "map-1990", function () {
-  map.getCanvas().style.cursor = "pointer";
+map_1990.on("mouseenter", "map-1990", function () {
+  map_1990.getCanvas().style.cursor = "pointer";
 });
 // Change it back to a pointer when it leaves.
-map.on("mouseleave", "map-1990", function () {
-  map.getCanvas().style.cursor = "";
-});
+map_1990.on("mouseleave", "map-1990", function () {
+  map_1990.getCanvas().style.cursor = "";
+})
+;
 //
 // SECOND MAP
 //
