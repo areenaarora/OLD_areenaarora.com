@@ -65,7 +65,7 @@ map_1990.on("click", "forest-data-1990", function (e) {
         "<br>" +
         "<p>" +
         pct_1990 +
-        " percentage of land area covered by forest" +
+        "% of land covered by forest" +
         "</p>"
     )
     .addTo(map_1990);
@@ -147,7 +147,7 @@ map_2020.on("click", "forest-data-2020", function (e) {
         "<br>" +
         "<p>" +
         pct_2020 +
-        " percentage of land area covered by forest" +
+        "% of land covered by forest" +
         "</p>"
     )
     .addTo(map_2020);
