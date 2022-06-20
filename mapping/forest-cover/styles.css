@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map-1990 {
+    width: 90%;
+    height: 600px;
+    margin: 5em auto;
+}
+
+#map-2020 {
+    width: 90%;
+    height: 600px;
+    margin: 5em auto;
+}
+
