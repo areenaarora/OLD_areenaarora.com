@@ -34,3 +34,33 @@ body {
     left: 60px;
     text-shadow: 2px 2px #343434;
 }
+
+.test-legend p {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    right: 10px;
+}
+
+.test-legend h3 {
+    padding-top: 0px;
+    margin-top: 0px;
+    color: black;
+    font-size: 20px;
+}
+
+.test-legend div span {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px;
+    margin: auto;
+    display: inline-block;
+    height: 16px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 16px;
+    opacity: 100%
+}
