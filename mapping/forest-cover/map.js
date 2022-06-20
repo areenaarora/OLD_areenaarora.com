@@ -77,8 +77,7 @@ map_1990.on("mouseenter", "forest-data-1990", function () {
 // Change it back to a pointer when it leaves.
 map_1990.on("mouseleave", "forest-data-1990", function () {
   map_1990.getCanvas().style.cursor = "";
-})
-;
+});
 //
 // SECOND MAP
 //
@@ -97,7 +96,7 @@ map_2020.on("load", function () {
     type: "fill",
     source: {
       type: "geojson",
-      data: "/data/countriesClimate.geojson",
+      data: "data/countriesClimate.geojson",
     },
     paint: {
       "fill-color": [
@@ -134,4 +133,30 @@ map_2020.on("load", function () {
       "fill-outline-color": "#000000",
     },
   });
+});
+// Popup
+map_2020.on("click", "forest-data-2020", function (e) {
+  let country_name = e.features[0].properties["Country Name"];
+  let pct_2020 = e.features[0].properties["2020"];
+  new mapboxgl.Popup()
+    .setLngLat(e.lngLat)
+    .setHTML(
+      "<h4>" +
+        country_name +
+        "</hr>" +
+        "<br>" +
+        "<p>" +
+        pct_2020 +
+        " percentage of land area covered by forest" +
+        "</p>"
+    )
+    .addTo(map_2020);
+});
+// Change the cursor to a pointer when the mouse is over the turnstileData layer.
+map_2020.on("mouseenter", "forest-data-2020", function () {
+  map_2020.getCanvas().style.cursor = "pointer";
+});
+// Change it back to a pointer when it leaves.
+map_2020.on("mouseleave", "forest-data-2020", function () {
+  map_2020.getCanvas().style.cursor = "";
 });
