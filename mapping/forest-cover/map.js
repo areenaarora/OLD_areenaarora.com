@@ -55,7 +55,7 @@ map_1990.on("load", function () {
 // Popup
 map_1990.on("click", "forest-data-1990", function (e) {
   let country_name = e.features[0].properties["Country Name"];
-  let pct_1990 = e.features[0].properties["RATING_1990"];
+  let pct_1990 = e.features[0].properties["1990"];
   new mapboxgl.Popup()
     .setLngLat(e.lngLat)
     .setHTML(
