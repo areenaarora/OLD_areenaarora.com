@@ -1,6 +1,5 @@
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYXJlZW5hLWFyb3JhIiwiYSI6ImNsM3U4bXk5NzI5bGIzZ211MmJmMzNpOWkifQ.vVgiB_-ozFDEiI9ERgrq2w";
-
 var map_1990 = new mapboxgl.Map({
   container: "map-1990",
   style: "mapbox://styles/areena-arora/cl3ugxu1u003614jzkj9maigu",
@@ -81,6 +80,9 @@ map_1990.on("mouseleave", "forest-data-1990", function () {
 //
 // SECOND MAP
 //
+
+mapboxgl.accessToken =
+  "pk.eyJ1IjoiYXJlZW5hLWFyb3JhIiwiYSI6ImNsM3U4bXk5NzI5bGIzZ211MmJmMzNpOWkifQ.vVgiB_-ozFDEiI9ERgrq2w";
 var map_2020 = new mapboxgl.Map({
   container: "map-2020",
   style: "mapbox://styles/areena-arora/cl3ugxu1u003614jzkj9maigu",
