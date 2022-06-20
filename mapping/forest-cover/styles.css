@@ -4,14 +4,14 @@ body {
 }
 
 #map-1990 {
-    width: 90%;
-    height: 600px;
+    width: 60%;
+    height: 650px;
     margin: 5em auto;
 }
 
 #map-2020 {
-    width: 90%;
-    height: 600px;
+    width: 60%;
+    height: 650px;
     margin: 5em auto;
 }
 
@@ -29,8 +29,8 @@ body {
 .text-on-image {
     position: absolute;
     color: #fcf8eb;
-    font-size: 78px;
-    bottom: 200px;
+    font-size: 70px;
+    bottom: 150px;
     left: 60px;
     text-shadow: 2px 2px #343434;
 }

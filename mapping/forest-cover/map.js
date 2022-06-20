@@ -6,7 +6,7 @@ var map_1990 = new mapboxgl.Map({
   style: "mapbox://styles/areena-arora/cl3ugxu1u003614jzkj9maigu",
   projection: "naturalEarth",
   zoom: 0.8,
-  maxZoom: 9,
+  maxZoom: 3.5,
   minZoom: 0.2,
   center: [0, 0],
 });
@@ -86,7 +86,7 @@ var map_2020 = new mapboxgl.Map({
   style: "mapbox://styles/areena-arora/cl3ugxu1u003614jzkj9maigu",
   projection: "naturalEarth",
   zoom: 0.8,
-  maxZoom: 9,
+  maxZoom: 3.5,
   minZoom: 0.2,
   center: [0, 0],
 });
