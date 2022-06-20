@@ -2,17 +2,17 @@ body {
     margin: 0;
     padding: 0;
 }
-/* 
+
 #map-1990 {
     width: 60%;
     height: 650px;
-    margin: 5em auto;
-} */
+    margin: 2em auto;
+}
 
 #map-2020 {
     width: 60%;
     height: 650px;
-    margin: 5em auto;
+    margin: 2em auto;
 }
 
 .hero-image {
