@@ -3,7 +3,7 @@ mapboxgl.accessToken =
 var map_1990 = new mapboxgl.Map({
   container: "map-1990",
   style: "mapbox://styles/areena-arora/cl3ugxu1u003614jzkj9maigu",
-  projection: "naturalEarth",
+  projection: "albers",
   zoom: 0.8,
   maxZoom: 3.5,
   minZoom: 0.2,
@@ -87,7 +87,7 @@ mapboxgl.accessToken =
 var map_2020 = new mapboxgl.Map({
   container: "map-2020",
   style: "mapbox://styles/areena-arora/cl3ugxu1u003614jzkj9maigu",
-  projection: "naturalEarth",
+  projection: "albers",
   zoom: 0.8,
   maxZoom: 3.5,
   minZoom: 0.2,
