@@ -104,7 +104,7 @@ map_2020.on("load", function () {
     paint: {
       "fill-color": [
         "match",
-        ["get", "RATING_1990"],
+        ["get", "RATING_2020"],
         "A",
         "#ffffe5",
         "B",
