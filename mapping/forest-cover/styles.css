@@ -33,8 +33,8 @@ body {
 .text-on-image {
     position: absolute;
     color: #fcf8eb;
-    font-size: 70px;
-    bottom: 60px;
+    font-size: 80px;
+    bottom: 100px;
     left: 60px;
     text-shadow: 2px 2px #343434;
 }
