@@ -26,6 +26,10 @@ body {
     object-fit: cover;
 }
 
+.chart{
+    width:auto;
+    max-height: 40px;
+}
 .text-on-image {
     position: absolute;
     color: #fcf8eb;
