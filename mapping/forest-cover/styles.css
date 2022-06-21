@@ -28,7 +28,7 @@ body {
 
 .chart{
     width:auto;
-    max-height: 40px;
+    max-height: 200px;
 }
 .text-on-image {
     position: absolute;
