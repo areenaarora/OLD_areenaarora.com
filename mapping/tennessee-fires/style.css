@@ -23,17 +23,20 @@ p {
     font-size: 0.9em;
     border-width: 0px 0px 0.5px 0px;
     border-style: solid;
-    border-color: #000000;
+    /* border-color: #000000; */
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    color: rgb(0, 0, 0);
 }
 .mapboxgl.Popup h2 {
     font-weight: 500;
     margin-top: 0.5em;
     margin-bottom: 0.3em;
+    color: rgb(0, 0, 0);
 }
 .mapboxgl.Popup p {
     font-weight: 300;
     margin-top: 0.3em;
     margin-bottom: 0em;
+    color: rgb(0, 0, 0);
 }
