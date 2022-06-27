@@ -1,6 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #2E2E2E;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
 }
 
 #map {
