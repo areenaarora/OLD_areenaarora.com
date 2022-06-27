@@ -18,7 +18,7 @@ p {
     margin: 1em auto;
 }
 
-.mapboxgl-popup-content h4 {
+.mapboxgl.Popup h4 {
     font-weight: 300;
     font-size: 0.9em;
     border-width: 0px 0px 0.5px 0px;
@@ -27,12 +27,12 @@ p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
-.mapboxgl-popup-content h2 {
+.mapboxgl.Popup h2 {
     font-weight: 500;
     margin-top: 0.5em;
     margin-bottom: 0.3em;
 }
-.mapboxgl-popup-content p {
+.mapboxgl.Popup p {
     font-weight: 300;
     margin-top: 0.3em;
     margin-bottom: 0em;
