@@ -4,10 +4,10 @@ var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/areena-arora/cl4w9i0cp005j14pry3aaaqo6",
   projection: "mercator",
-  zoom: 6.2,
+  zoom: 6,
   center: [-86.1, 35.9],
   maxZoom: 10,
-  minZoom: 6,
+  minZoom: 5,
 });
 
 map.on("load", function () {
