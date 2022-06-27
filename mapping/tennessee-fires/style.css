@@ -40,3 +40,7 @@ p {
     margin-bottom: 0em;
     color: rgb(0, 0, 0);
 }
+
+.mapboxgl.Popup{
+    color: black;
+}
