@@ -18,7 +18,7 @@ p {
     margin: 1em auto;
 }
 
-.mapboxgl.Popup h4 {
+.mapboxgl.Popup h1 {
     font-weight: 300;
     font-size: 0.9em;
     border-width: 0px 0px 0.5px 0px;
