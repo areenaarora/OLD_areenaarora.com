@@ -70,6 +70,6 @@ map.on("mouseenter", "wildfire", function (e) {
     map.getCanvas().style.cursor = "pointer";
   });
   // Change it back to a pointer when it leaves.
-  map.on("mouseout", "wildfire", function () {
+  map.on("mouseleave", "wildfire", function () {
     map.getCanvas().style.cursor = "";
   });
