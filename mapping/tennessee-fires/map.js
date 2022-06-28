@@ -47,7 +47,7 @@ map.on("load", function () {
   });
 
   // Popup
-map.on("hover", "wildfire", function (e) {
+map.on("mouseenter", "wildfire", function (e) {
     let county_name = e.features[0].properties["NAME_x"];
     let exposed = e.features[0].properties["Total fraction of HUs directly or indirectly exposed"];
     exposed = (exposed * 100).toFixed(0);
