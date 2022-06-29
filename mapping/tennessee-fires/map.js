@@ -127,7 +127,7 @@ var map_two = new mapboxgl.Map({
   map_two.on("click", "wildfire_two", function (e) {
       let county_name = e.features[0].properties["NAME_x"];
       let exposed_direct = e.features[0].properties["Fraction of Total HUs  Directly Exposed"];
-      exposed = (exposed * 100).toFixed(0);
+      exposed_direct = (exposed_direct * 100).toFixed(0);
       new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(
