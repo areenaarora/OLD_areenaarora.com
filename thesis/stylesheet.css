@@ -1,7 +1,7 @@
 .hero-image {
     width: 120vw;
     height: auto;
-    max-height: 120vh;
+    max-height: 130vh;
     margin-right: -100px;
     margin-left: -200px;
     margin-top: -80px;
@@ -14,8 +14,8 @@
 .text-on-image {
     position: absolute;
     color: orange;
-    font-size: 150px;
-    top: 450px;
+    font-size: 95px;
+    top: 410px;
     left: 60px;
-    text-shadow: 2px 2px blue;
+    text-shadow: 6px 6px black;
 }
