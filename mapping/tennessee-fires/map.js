@@ -33,7 +33,7 @@ map.on("load", function () {
       paint: {
         "fill-color": [
           "match",
-          ["get", "naturalBreaks"],
+          ["get", "naturalBreaks_allexp"],
           "39% - 51%", "#F8CDAA",
           "51% - 64%", "#FAB184",
           "64% - 86%", "#F8936D",
@@ -93,7 +93,7 @@ var map_two = new mapboxgl.Map({
         type: "line",
         source: {
           type: "geojson",
-          data: "/data/TNData.geojson",
+          data: "data/TNData.geojson",
         },
         paint: {
           "line-color": "#ffffff",
@@ -105,12 +105,12 @@ var map_two = new mapboxgl.Map({
         type: "fill",
         source: {
           type: "geojson",
-          data: "/data/TNData.geojson",
+          data: "data/TNData.geojson",
         },
         paint: {
           "fill-color": [
             "match",
-            ["get", "Direct_naturalBreaks"],
+            ["get", "naturalBreaks_Directexp"],
             "25% - 47%", "#F8CDAA",
             "47% - 61%", "#FAB184",
             "61% - 72%", "#F8936D",
