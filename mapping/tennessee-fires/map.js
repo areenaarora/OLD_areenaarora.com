@@ -73,3 +73,80 @@ map.on("click", "wildfire", function (e) {
   map.on("mouseleave", "wildfire", function () {
     map.getCanvas().style.cursor = "";
   });
+
+
+//   SECOND MAP //
+
+var map_two = new mapboxgl.Map({
+    container: "map-second",
+    style: "mapbox://styles/areena-arora/cl4yi8n6v000p14nvwb35apdl",
+    projection: "mercator",
+    zoom: 6,
+    center: [-86.1, 35.9],
+    maxZoom: 10,
+    minZoom: 5,
+  });
+  
+  map_two.on("load", function () {
+      map_two.addLayer({
+        id: "outline",
+        type: "line",
+        source: {
+          type: "geojson",
+          data: "/data/TNData.geojson",
+        },
+        paint: {
+          "line-color": "#ffffff",
+          "line-width": 0.7,
+        },
+      });
+      map_two.addLayer({
+        id: "wildfire_two",
+        type: "fill",
+        source: {
+          type: "geojson",
+          data: "/data/TNData.geojson",
+        },
+        paint: {
+          "fill-color": [
+            "match",
+            ["get", "Direct_naturalBreaks"],
+            "25% - 47%", "#F8CDAA",
+            "47% - 61%", "#FAB184",
+            "61% - 72%", "#F8936D",
+            "72% - 80%", "#EF7860",
+            "80% - 89%", "#E35B5B",
+            "#ffffff",
+          ],
+          "fill-outline-color": "#ffffff",
+        },
+      });
+    });
+  
+    // Popup
+  map_two.on("click", "wildfire_two", function (e) {
+      let county_name = e.features[0].properties["NAME_x"];
+      let exposed_direct = e.features[0].properties["Fraction of Total HUs  Directly Exposed"];
+      exposed = (exposed * 100).toFixed(0);
+      new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(
+          "<h4>" +
+          county_name +
+            "</hr>" +
+            "<br>" +
+            "<p>" +
+            exposed_direct +
+            "% of housing units exposed to wildfire" +
+            "</p>"
+        )
+        .addTo(map_two);
+    });
+    // Change the cursor to a pointer when the mouse is over the turnstileData layer.
+    map_two.on("mouseenter", "wildfire_two", function () {
+      map_two.getCanvas().style.cursor = "pointer";
+    });
+    // Change it back to a pointer when it leaves.
+    map_two.on("mouseleave", "wildfire_two", function () {
+      map_two.getCanvas().style.cursor = "";
+    });
