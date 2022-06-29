@@ -1,20 +1,21 @@
 .hero-image {
     width: 120vw;
     height: auto;
-    max-height: 160vh;
+    max-height: 120vh;
     margin-right: -100px;
     margin-left: -200px;
     margin-top: -80px;
     margin-bottom: 10px;
     object-fit: cover;
     object-position: center bottom;
+    opacity: 0.9;
 }
 
 .text-on-image {
     position: absolute;
-    color: #fcf8eb;
-    font-size: 90px;
-    bottom: -450px;
+    color: orange;
+    font-size: 150px;
+    top: 450px;
     left: 60px;
-    text-shadow: 2px 2px #343434;
+    text-shadow: 2px 2px blue;
 }
