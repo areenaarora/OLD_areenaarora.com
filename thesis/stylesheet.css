@@ -1,14 +1,14 @@
 .hero-image {
-    width: 120vw;
+    width: 113vw;
     height: auto;
     max-height: 130vh;
-    margin-right: -100px;
+    margin-right: -280px;
     margin-left: -200px;
     margin-top: -80px;
     margin-bottom: 10px;
     object-fit: cover;
     object-position: center bottom;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .text-on-image {
