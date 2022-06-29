@@ -137,7 +137,7 @@ var map_two = new mapboxgl.Map({
             "<br>" +
             "<p>" +
             exposed_direct +
-            "% of housing units exposed to wildfire" +
+            "% of housing units DIRECTLY exposed to wildfire" +
             "</p>"
         )
         .addTo(map_two);
