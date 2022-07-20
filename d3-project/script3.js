@@ -48,17 +48,18 @@ d3.csv("latest_df.csv", function (data) {
     .attr("class", "tooltip")
     .style("background-color", "black")
     .style("border-radius", "5px")
-    .style("padding", "10px")
+    .style("width", "150px")
+    .style("padding", "8px")
     .style("color", "white");
 
   // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
   var showTooltip = function (d) {
     tooltip.transition().duration(200);
     tooltip
-      .style("opacity", 1)
+      .style("opacity", 0.8)
       .html("Overtime earned: " + d.total_ot_paid)
-      .style("left", d3.mouse(this)[0] + 30 + "px")
-      .style("top", d3.mouse(this)[1] + 30 + "px");
+      .style("left", d3.mouse(this)[0] + 10 + "px")
+      .style("top", d3.mouse(this)[1] + 10 + "px");
   };
   var moveTooltip = function (d) {
     tooltip
