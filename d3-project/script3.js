@@ -1,10 +1,10 @@
 // set the dimensions and margins of the graph
-var margin = { top: 20, right: 20, bottom: 30, left: 50 },
-  width = 550 - margin.left - margin.right,
-  height = 420 - margin.top - margin.bottom;
+var margin = { top: 20, right: 20, bottom: 30, left: 150 },
+  width = 680 - margin.left - margin.right,
+  height = 450 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
-var svg = d3
+var svg_scatter = d3
   .select("#my_dataviz")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
@@ -16,14 +16,14 @@ var svg = d3
 d3.csv("new_df.csv", function (data) {
   // Add X axis
   var x = d3.scaleLinear().domain([0, 55]).range([0, width]);
-  svg
+  svg_scatter
     .append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x));
 
   // Add Y axis
   var y = d3.scaleLinear().domain([0, 3000]).range([height, 0]);
-  svg.append("g").call(d3.axisLeft(y));
+  svg_scatter.append("g").call(d3.axisLeft(y));
 
   // Add a scale for bubble size
   var z = d3.scaleLinear().domain([0, 250000]).range([4, 40]);
@@ -70,7 +70,7 @@ d3.csv("new_df.csv", function (data) {
   };
 
   // Add dots
-  svg
+  svg_scatter
     .append("g")
     .selectAll("dot")
     .data(data)
