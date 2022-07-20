@@ -12,27 +12,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/efe58d4158.js" crossorigin="anonymous"></script>
-     <!-- Load d3.js -->
-     <script src="https://d3js.org/d3.v4.js"></script>
-     <!-- Load color scale -->
-     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <!-- Load color scale -->
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <!-- Meta tags -->
+
+    <!-- HTML Meta Tags -->
+    <title>D3 exercise</title>
+    <meta name="description" content="Data-viz exploration in D3—A first!">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://areenaarora.com/d3-project">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="D3 exercise">
+    <meta property="og:description" content="Data-viz exploration in D3—A first!">
+    <meta property="og:image" content="https://areenaarora.com/d3-project/d3-cover.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="areenaarora.com">
+    <meta property="twitter:url" content="https://areenaarora.com/d3-project">
+    <meta name="twitter:title" content="D3 exercise">
+    <meta name="twitter:description" content="Data-viz exploration in D3—A first!">
+    <meta name="twitter:image" content="https://areenaarora.com/d3-project/d3-cover.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
     <title>D3 exercise</title>
 </head>
 
 <body>
     <div class="center-content">
         <h1>Exploring NYC payroll data with D3</h1>
-        <p>New York City's payroll dataset is one I'm familiar with and have <a href="https://areenaarora.com/salaries/">written in detail about it too.</a> For this project however, I wanted to see how much easier D3 makes my life (hint: It did not).</p>
-        <p>I can now say I know (ish) JavaScript a bit and thanks to this exercise, I understand D3's syntax better. All these charts were made possible thanks to <a href="https://d3-graph-gallery.com/"><span class="highlighted-words">The D3 Graph Gallery!</span></a>
-            <p>In reporting on this data previously, I learned that some agencies spend way more than others on overtime pay— for various reasons.</p>
-            <p>This first chart here shows the same! Here, I've plotted overtime spending by agencies in 2021.</p>
+        <p>New York City's payroll dataset is one I'm familiar with and have <a
+                href="https://areenaarora.com/salaries/">written in detail about it too.</a> For this project however, I
+            wanted to see how much easier D3 makes my life (hint: It did not).</p>
+        <p>I can now say I know (ish) JavaScript a bit and thanks to this exercise, I understand D3's syntax better. All
+            these charts were made possible thanks to <a href="https://d3-graph-gallery.com/"><span
+                    class="highlighted-words">The D3 Graph Gallery!</span></a>
+        <p>In reporting on this data previously, I learned that some agencies spend way more than others on overtime
+            pay— for various reasons.</p>
+        <p>This first chart here shows the same! Here, I've plotted overtime spending by agencies in 2021.</p>
         <div id="dataviz"></div>
-        <p>New York Police Department spent close to $500 million in just overtime across all its employees. The next highest was the Fire Department at a little under $300 million.</p>
-        <p>For this second chart, I've plotted number of years of service on the x-axis and overtime hours worked on the y-axis.</p>
-        <p>The color of the bubbles corresponds to the agency the employee works for. For this chart, I've only plotted employees who made over $200,000 in total pay in 2021 from the top three agencies that spend the most on overtime.</p>
+        <p>New York Police Department spent close to $500 million in just overtime across all its employees. The next
+            highest was the Fire Department at a little under $300 million.</p>
+        <p>For this second chart, I've plotted number of years of service on the x-axis and overtime hours worked on the
+            y-axis.</p>
+        <p>The color of the bubbles corresponds to the agency the employee works for. For this chart, I've only plotted
+            employees who made over $200,000 in total pay in 2021 from the top three agencies that spend the most on
+            overtime.</p>
         <div id="my_dataviz"></div>
         <h2><b>The chart that didn't quite work:</b></h2>
-        <p>This chart was meant to show gross salary and overtime pay. The x-axis shows gross base salary and y-axis shows overtime pay. Some employees in the $90,000 to $130,000 gross salary range made over $100,000 in just overtime.</p>
+        <p>This chart was meant to show gross salary and overtime pay. The x-axis shows gross base salary and y-axis
+            shows overtime pay. Some employees in the $90,000 to $130,000 gross salary range made over $100,000 in just
+            overtime.</p>
         <div id="scatterplot"></div>
     </div>
     <script src="script.js"></script>
