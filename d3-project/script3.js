@@ -34,8 +34,6 @@ d3.csv("latest_df.csv", function (data) {
     .domain([
       "POLICE DEPARTMENT",
       "FIRE DEPARTMENT",
-    //   "NYC HOUSING AUTHORITY",
-    //   "DEPARTMENT OF CORRECTION",
       "DEPARTMENT OF SANITATION",
     ])
     .range(d3.schemeSet2);
@@ -57,7 +55,7 @@ d3.csv("latest_df.csv", function (data) {
     tooltip.transition().duration(200);
     tooltip
       .style("opacity", 0.8)
-      .html("Overtime earned: " + d.total_ot_paid)
+      .html("Overtime earned: " + d.total_ot_paid, "format, ",")
       .style("left", d3.mouse(this)[0] + 10 + "px")
       .style("top", d3.mouse(this)[1] + 10 + "px");
   };
