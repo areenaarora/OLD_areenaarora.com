@@ -55,10 +55,11 @@ d3.csv("latest_df.csv", function (data) {
     tooltip.transition().duration(200);
     tooltip
       .style("opacity", 0.8)
-      .html("Overtime earned: " + d.total_ot_paid, "format, ",")
+      .html("Overtime earned: " + d.total_ot_paid)
       .style("left", d3.mouse(this)[0] + 10 + "px")
       .style("top", d3.mouse(this)[1] + 10 + "px");
   };
+  
   var moveTooltip = function (d) {
     tooltip
       .style("left", d3.mouse(this)[0] + 30 + "px")
