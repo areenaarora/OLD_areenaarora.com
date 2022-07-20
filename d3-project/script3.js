@@ -13,7 +13,7 @@ var svg_scatter = d3
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("new_df.csv", function (data) {
+d3.csv("latest_df.csv", function (data) {
   // Add X axis
   var x = d3.scaleLinear().domain([0, 55]).range([0, width]);
   svg_scatter
@@ -34,8 +34,8 @@ d3.csv("new_df.csv", function (data) {
     .domain([
       "POLICE DEPARTMENT",
       "FIRE DEPARTMENT",
-      "NYC HOUSING AUTHORITY",
-      "DEPARTMENT OF CORRECTION",
+    //   "NYC HOUSING AUTHORITY",
+    //   "DEPARTMENT OF CORRECTION",
       "DEPARTMENT OF SANITATION",
     ])
     .range(d3.schemeSet2);
@@ -56,7 +56,7 @@ d3.csv("new_df.csv", function (data) {
     tooltip.transition().duration(200);
     tooltip
       .style("opacity", 1)
-      .html("Agency: " + d.agency_name)
+      .html("Overtime earned: " + d.total_ot_paid)
       .style("left", d3.mouse(this)[0] + 30 + "px")
       .style("top", d3.mouse(this)[1] + 30 + "px");
   };
