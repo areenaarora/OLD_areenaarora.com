@@ -1,3 +1,7 @@
+.center-text {
+    text-align: center;
+}
+
 .hero-image {
     width: 113vw;
     height: auto;
@@ -8,14 +12,14 @@
     margin-bottom: 10px;
     object-fit: cover;
     object-position: center bottom;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .text-on-image {
     position: absolute;
-    color: rgb(229, 255, 0);
-    font-size: 95px;
-    top: 350px;
+    color: rgb(164, 223, 252);
+    font-size: 80px;
+    top: 480px;
     left: 60px;
     text-shadow: 6px 6px black;
 }
