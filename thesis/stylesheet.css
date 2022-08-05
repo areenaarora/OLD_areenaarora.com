@@ -13,9 +13,9 @@
 
 .text-on-image {
     position: absolute;
-    color: orange;
+    color: rgb(229, 255, 0);
     font-size: 95px;
-    top: 410px;
+    top: 350px;
     left: 60px;
     text-shadow: 6px 6px black;
 }
