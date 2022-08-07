@@ -54,6 +54,8 @@ h3 {
 
 #heatmap {
     position: relative;
+    width: 58%;
+    margin: 5rem auto;
 }
 
 .tooltip {
@@ -62,4 +64,10 @@ h3 {
     display: block;
     word-wrap: break-word;
     opacity: 0;
+}
+
+#infographic {
+    max-width: 850px;
+    width: 100%;
+    height: auto;
 }
