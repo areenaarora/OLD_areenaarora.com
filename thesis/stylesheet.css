@@ -54,8 +54,8 @@ h3 {
 
 #heatmap {
     position: relative;
-    width: 58%;
-    margin: 5rem auto;
+    /* width: 58%; */
+    /* margin: 5rem auto; */
 }
 
 .tooltip {
