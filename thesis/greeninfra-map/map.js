@@ -21,7 +21,7 @@ var map = new mapboxgl.Map({
         'type': 'circle',
         'source': {
             'type': 'geojson',
-            'data': "data/DEP-Green-Infrastructure.geojson",
+            'data': "DEP-Green-Infrastructure.geojson",
         },
         'paint': {
             'circle-color': '#4CBB17',

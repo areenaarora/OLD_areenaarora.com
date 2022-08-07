@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../stylesheets/stylesheet.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="./greeninfra-map/map-styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/efe58d4158.js" crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v4.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
     <title>Sponge city!</title>
 </head>
 
@@ -486,7 +489,7 @@
         <p>Since the program’s inception, the city has built over 10,700 green infrastructures— most of them being in
             Queens and Brooklyn.</p>
     </div>
-    <img src="map.png" class="map-image">
+    <div id="map"></div>
     <div class="center-content">
         <p>“At the point where we’ve sited all we can … We’re looking for alternative ways to put in more green
             infrastructure,” Nyleen Euton, green infrastructure grant program manager said.</p>
@@ -557,4 +560,5 @@
     </div>
     <script src="script_heatmap.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script type='text/javascript' src="./greeninfra-map/map.js"></script>
 </body>
