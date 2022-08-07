@@ -41,7 +41,17 @@ d3.csv("rainNYC.csv", function (data) {
   svg
     .append("g")
     .style("font-size", 15)
-    .call(d3.axisLeft(y).tickSize(0))
+    .call(
+      d3
+        .axisLeft(y)
+        .tickSize(0)
+        .tickFormat(function (d) {
+          var date = new Date(2022, d - 1, 1).toLocaleString("default", {
+            month: "long",
+          });
+          return date;
+        })
+    )
     .select(".domain")
     .remove();
 
@@ -70,11 +80,14 @@ d3.csv("rainNYC.csv", function (data) {
   };
   var mousemove = function (d) {
     var date = new Date(d.year, d.month - 1, 1).toLocaleString("default", {
-      month: "long", year:"numeric"
+      month: "long",
+      year: "numeric",
     });
     tooltip
       // .html("In " + d.month + ", " + d.year + " it rained:" + d.rain_inches + " inches")
-      .html(`In ${date}, it rained ${parseFloat(d.rain_inches).toFixed(2)} inches`)
+      .html(
+        `In ${date}, it rained ${parseFloat(d.rain_inches).toFixed(2)} inches`
+      )
       .style("left", d3.mouse(this)[0] + 70 + "px")
       .style("top", d3.mouse(this)[1] + "px");
   };
@@ -118,8 +131,8 @@ svg
   .attr("x", 0)
   .attr("y", -50)
   .attr("text-anchor", "left")
-  .style("font-size", "22px")
-  // .text("Rainfall in New York City!");
+  .style("font-size", "22px");
+// .text("Rainfall in New York City!");
 
 // Add subtitle to graph
 svg
