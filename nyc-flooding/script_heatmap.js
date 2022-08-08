@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
-var margin = { top: 0, right: 15, bottom: 30, left: 150 },
+var margin = { top: 55, right: 15, bottom: 30, left: 150 },
   width = 1200 - margin.left - margin.right,
-  height = 600 - margin.top - margin.bottom;
+  height = 650 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3
