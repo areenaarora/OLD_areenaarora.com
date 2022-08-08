@@ -3,7 +3,7 @@ mapboxgl.accessToken =
 var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/areena-arora/cl4evq6ks004g15myyhrsmd7y",
-  zoom: 9,
+  zoom: 10,
   center: [-73.88, 40.73],
   maxZoom: 20,
   minZoom: 6,
