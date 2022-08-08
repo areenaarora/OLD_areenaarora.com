@@ -46,10 +46,10 @@ h3 {
     position: absolute;
     color: rgb(242, 235, 209);
     font-size: 90px;
-    top: 250px;
+    top: 230px;
     left: 60px;
     word-wrap: break-word;
-    /* text-shadow: 6px 6px rgb(255, 253, 253); */
+    text-shadow: 6px 4px rgb(0, 0, 0);
 }
 
 #heatmap {
