@@ -97,3 +97,7 @@ h3 {
     margin: 0em 2em;
     z-index: 100;
 }
+
+.full-width-image {
+    width:100vw;
+}
