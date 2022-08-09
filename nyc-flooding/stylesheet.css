@@ -45,16 +45,50 @@ h3 {
 .text-on-image {
     position: absolute;
     color: rgb(242, 235, 209);
-    font-size: 90px;
-    top: 230px;
+    top: 280px;
     left: 60px;
+    font-size: 60px;   
     word-wrap: break-word;
-    text-shadow: 6px 4px rgb(0, 0, 0);
+    text-shadow: 6px 2px rgb(0, 0, 0);
+}
+
+#text-on-image-p {
+    position: absolute;
+    color: rgb(242, 235, 209);
+    top: 520px;
+    left: 60px;
+    font-size: 24px;   
+    word-wrap: break-word;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+#heatmap-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:
+        1fr min(850px, 100%) 1fr;
+}
+
+#heatmap-container .top-right {
+    margin: 0;
+    grid-column: 2;
+    justify-self: end;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#heatmap-container .bottom-left {
+    grid-column: 2;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bolder;
 }
 
 #heatmap {
+    width: 100%;
+    grid-column: 1 / 4;
     position: relative;
-    margin: 0rem auto;
+    margin: -40px auto 0;
 }
 
 .tooltip {
@@ -99,5 +133,5 @@ h3 {
 }
 
 .full-width-image {
-    width:100vw;
+    width: 100vw;
 }
