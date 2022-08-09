@@ -1,6 +1,12 @@
 body {
     padding: 0px;
     /* background-color:  rgb(251, 251, 251); */
+    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'Playfair Display', serif;
+}
+
+.bold-text {
+    font-weight: bolder;
 }
 
 h3 {
