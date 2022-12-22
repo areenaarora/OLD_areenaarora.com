@@ -18,19 +18,19 @@ h2 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 a {
     text-decoration: none;
     color: #000000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 a:hover {
     color: #aa55ff;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 p.marquee_text{
