@@ -63,7 +63,7 @@ p a {
   margin-top: 80px;
 }
 
-.images_wrapper {
+.center_wrapper {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
