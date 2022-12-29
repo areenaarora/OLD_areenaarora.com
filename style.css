@@ -10,6 +10,23 @@ body {
   margin-right: 200px;
 }
 
+@media (max-width:400px) {
+  h2 {
+  font-size: 20px;
+  line-height: 90px;
+  }
+
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .topper{
+    word-wrap: break-word;
+    display: table-cell;
+  }
+}
+
 h1 {
   font-family: 'Eczar', serif;
   font-size: 70px;
@@ -18,14 +35,14 @@ h1 {
   letter-spacing: 10px;
   opacity: 80%;
   font-style: italic;
+  margin-bottom: 10px;
 } 
 
 h2 {
   font-family: 'Libre Baskerville', serif;
   font-size: 90px;
   color: #0954A9;
-  margin-top: 70px;
-  line-height: 0px;
+  margin-top: 0px;
 }
 
 h3 {
